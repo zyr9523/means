@@ -1,0 +1,31 @@
+{
+    "list":[
+        {
+            "id":0,
+            "image_path":"../image/product1.png",
+            "names":"Product name",
+            "details":"Short description",
+            "price":"559$",
+            "count":0,
+            "isShow":false
+        },
+        {
+            "id":0,
+            "image_path":"../image/product2.png",
+            "names":"Product name",
+            "details":"Short description",
+            "price":"559$",
+            "count":0,
+            "isShow":false
+        },
+        {
+            "id":0,
+            "image_path":"../image/product1.png",
+            "names":"Product name",
+            "details":"Short description",
+            "price":"559$",
+            "count":0,
+            "isShow":false
+        }
+    ]
+}

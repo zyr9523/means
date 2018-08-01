@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    list:{
+                        tit:'选择你要的数据',
+                        data:[
+                            {
+                                id:0,
+                                tit:'第一条数据',
+                                secList:['数据1','数据2','数据3'],
+                                isAppend:false
+                            },
+                            {
+                                id:1,
+                                tit:'第二条数据',
+                                secList:['数据4','数据5','数据6'],
+                                isAppend:false
+                            },
+                            {
+                                id:2,
+                                tit:'第三条数据',
+                                secList:['数据7','数据8','数据9'],
+                                isAppend:false
+                            },
+                            {
+                                id:3,
+                                tit:'第四条数据',
+                                secList:['数据10','数据11','数据12'],
+                                isAppend:false
+                            }
+                        ]
+                    },
+                    isShow:false
+                }
+                this.click = this.click.bind(this);
+            }
+            render(){
+                let {list,isShow} = this.state;
+                return (
+                    <div className="wrap">
+                        <div>
+                            <h3 onClick={this.toggle.bind(this)}>{list.tit}</h3>
+                            {isShow?<Child data={list.data} click={this.click}/>:null}
+                        </div>
+                    </div>
+                )
+            }
+            toggle(){
+                this.setState({isShow:!this.state.isShow})
+            }
+            click(item){
+                let {list} = this.state;
+                if(!item.isAppend){
+                    list.data.forEach((val)=>{
+                        val.isAppend = false
+                    })
+                }
+                item.isAppend = !item.isAppend;
+                this.setState({list},()=>{
+                    console.log(this.state.list)
+                })
+            }
+
+        }
+        class Child extends React.Component{
+            render(){
+                let {data,click} = this.props;
+                return (
+                    <div className="box">
+                        <ul>
+                            {
+                                data.map((item,index)=>{
+                                    return <li key={index} onClick={()=>{
+                                        click(item)
+                                    }}>{item.tit}
+                                    {item.isAppend?<List datas={item.secList}/>:null}
+                                    </li>
+                                })
+                            }
+                        </ul>
+                    </div>
+                )
+            }
+        }
+        class List extends React.Component{
+            render(){
+                let {datas} = this.props;
+                return (
+                    <ul>
+                        {
+                            datas.map((item,index)=>{
+                                return <li key={index}>{item}</li>
+                            })
+                        }
+                    </ul>
+                )
+            }
+        }
+        ReactDOM.render(<App/>,document.querySelector('#root'));
+    </script>
+</body>
+</html>

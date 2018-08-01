@@ -1,0 +1,136 @@
+
+全部[20]单选题[8]多选题[4]判断题[4]填空题(手动判卷)[4]
+试卷总分：100
+1.[单选题](5分)
+对于受控组件说法正确的是？
+
+A: 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+B: 一个受控的组件自己维护自己的state
+C: 没有value属性
+D: 没办法更改value
+正确答案： A 
+2.[单选题](5分)
+select中通过添加什么属性实现多选下拉列表？
+
+A: multiple={true}
+B: checkbox
+C: checked={true}
+D: selected
+正确答案： A 
+3.[单选题](5分)
+非受控组件input可以通过什么来表示组件的默认状态？
+
+A: defaultValue
+B: props
+C: value
+D: defaultChecked
+正确答案： A 
+4.[单选题](5分)
+checkbox通过添加什么属性实现选中状态？
+
+A: defaule={true}
+B: checked={true}
+C: selected
+D: checkbox
+正确答案： B 
+5.[单选题](5分)
+<input type="text" />这是什么组件？
+
+A: 受控组件
+B: 非受控组件
+C: 只要组件接收到新 props，mapDispatchToProps 也会被调用
+D: 在这里不可以将action creater与dispatch绑定
+正确答案： B 
+6.[单选题](5分)
+什么属性可以引用组件真正实例？
+
+A: ref
+B: class
+C: id
+D: value
+正确答案： A 
+7.[单选题](5分)
+以下哪些生命周期只调用一次？
+
+A: componentWillReceiveProps
+B: getDefaultProps
+C: render
+D: shouldComponentUpdate
+正确答案： B 
+8.[单选题](5分)
+对虚拟dom描述错误的是？
+
+A: 用JS表示DOM结构
+B: 比较两棵DOM树的差异是 Virtual DOM 算法最核心的部分
+C: React又通过在这个虚拟DOM上实现了一个 diff 算法找出最小变更，再把这些变更写入实际的DOM中
+D: diff后的差异不会应用到真正的DOM树上
+正确答案： D 
+9. [多选题] (5分)
+常用事件有哪些？
+
+A: 键盘事件
+B: 焦点事件
+C: 表单事件
+D: 鼠标事件
+正确答案：ABCD
+10. [多选题] (5分)
+关于redux描述正确的是？
+
+A: 应用中所有的 state 都以一个对象树的形式储存在一个单一的 store 中
+B: 惟一改变 state 的办法是触发 action，一个描述发生什么的对象。
+C: 为了描述 action 如何改变 state 树，你需要编写 reducers。
+D: redux中不可以修改数据
+正确答案：ABC
+11. [多选题] (5分)
+以下哪些事件类型在react中可以使用
+
+A: 合成事件
+B: 原生事件
+C: onChangStateSuccess
+D: onChangStateError
+正确答案：AB
+12. [多选题] (5分)
+以下属于reducer禁止操作的事情有哪些？
+
+A: 修改传入参数
+B: 执行有副作用的操作，如 API 请求和路由跳转
+C: 调用非纯函数，如 Date.now() 或 Math.random()
+D: 更新state
+正确答案：ABC
+13. [判断题] (5分)
+一个表单没有value props（单选按钮和复选框对应的是checked prop），就可称为非受控组件
+
+正确答案： 对 
+14. [判断题] (5分)
+<input type='text' defaultValue='hello' onChange={this.handleChange.bind(this)}> 触发handleChange函数，更改value，会触发页面渲染
+
+正确答案： 错 
+ 
+15. [判断题] (5分)
+在React中，是把真实的DOM转换成JavaScript对象树，也就是所谓的虚拟DOM。
+
+正确答案： 对 
+ 
+16. [判断题] (5分)
+Jsx语法中不可书写条件
+
+正确答案： 错 
+
+17. [填空题(手动判卷)] (5分)
+一个没有value属性的<input>就是一个_____组件
+
+正确答案： 非受控组件 
+ 
+18. [填空题(手动判卷)] (5分)
+一个____的<input>组件都有一个value属性
+
+正确答案： 受控 
+19. [填空题(手动判卷)] (5分)
+在react中定义一个受控的并可对其value进行更改的多行输入框______
+
+正确答案： <textarea value={textareaValue} onChange={this.handleTextareaChange}/> 
+ 
+20. [填空题(手动判卷)] (5分)
+react中的radio和checkbox通过_____表示选中状态
+
+正确答案： checked=true 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>我爱我家</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        class App extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    data:[
+                        {
+                            img1:'./image/1.JPG',
+                            img2:'./image/2.JPG'
+                        },
+                        {
+                            img1:'./image/7.JPG',
+                            img2:'./image/8.JPG'
+                        },
+                        {
+                            img1:'./image/11.JPG',
+                            img2:'./image/12.JPG'
+                        },
+                        {
+                            img1:'./image/13.JPG',
+                            img2:'./image/14.JPG'
+                        },
+                        {
+                            img1:'./image/3.JPG',
+                            img2:'./image/4.JPG'
+                        },
+                        {
+                            img1:'./image/5.JPG',
+                            img2:'./image/6.JPG'
+                        },
+                        {
+                            img1:'./image/9.JPG',
+                            img2:'./image/10.JPG'
+                        }
+                    ],
+                    count:0,
+                    isAppend:false
+                }
+                this.reviseInd = this.reviseInd.bind(this)
+            }
+            render(){
+                let {count} = this.state;
+                return (
+                    <div className="wrap">
+                        {
+                            this.state.data.map((item,index)=>{
+                                return <Imgbox id={index} count={count} key={index}  reviseInd={this.reviseInd} img={item}/>
+                            })
+                        }
+                    </div>
+                )
+            }
+            reviseInd(index){
+                let {data} = this.state;
+                if(index >= data.length){
+                    index = 0;
+                }
+                this.setState({
+                    count:index
+                })
+            }
+        }
+        class Imgbox extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    isAppend:false
+                }
+                this.rotateEnd = this.rotateEnd.bind(this)
+            }
+            render(){
+                let {id,count,reviseInd,img} = this.props;
+                return (
+                    <div className="first_box">
+                        <p className={this.state.isAppend?'active':''} onTransitionEnd={()=>{this.rotateEnd(id*1+1)}}>
+                            <img src={img.img1} />
+                        </p>
+                        <p className={this.state.isAppend?'':'active'}>
+                            <img src={img.img2} />
+                        </p>
+                    </div>
+                )
+            }
+            componentDidMount(){
+                let {id,count} = this.props;
+                if(id == count){
+                    setTimeout(()=>{
+                        this.setState({
+                            isAppend:!this.state.isAppend
+                        })
+                    },1);
+                } 
+            }
+            componentWillReceiveProps(nextProps){
+                let {id,count} = nextProps;
+                if(id == count){
+                    this.setState({
+                        isAppend:!this.state.isAppend
+                    })
+                }
+            }
+            rotateEnd(id){
+                this.props.reviseInd(id)
+                console.log('end...')
+            }
+        }
+        ReactDOM.render(<App/>,document.querySelector('#root'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0017-  
+渐进式开发4
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[8]多选题[6]判断题[6]
+试卷总分：100
+1.[单选题](5分)
+以下对于findDOMNode说法正确的
+A: 当参数是DOM，返回值就是该DOM
+B: 当参数是Component获取的是该Component？
+C: 当参数是Component获取的是该父级组件？
+D: null
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+以下对于ref说法正确的
+A: 添加到Compoennt实例上获取到的是dom
+B: 添加到dom上获取到的是dom
+C: 添加到dom上获取到的是component实例
+D: 替换值
+正确答案： B 
+试题解析：
+我的答案： B 
+3.[单选题](5分)
+ReactDOM.findDOMNode(this)返回的是,  知识点：dom操作 来源：大纲
+A: 组件实例相对应的DOM节点
+B: 获取到当前的对象
+C: 获取到body
+D: 获取到当前组件实例
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](5分)
+ref的值如果是回调函数的话，那么这个回调函数会在什么时候执行,  知识点：dom操作 来源：大纲
+A: 通过refs调用的时候
+B: render后
+C: render之前调用
+D: 组件卸载前
+正确答案： B 
+试题解析：
+我的答案： B 
+5.[单选题](5分)
+ref的值如果是回调函数（使用箭头函数）的话，那么这个回调函数内部的this指的是,  知识点：dom操作 来源：日考
+A: window
+B: 当前dom
+C: 当前组件实例
+D: react－dom
+正确答案： C 
+试题解析：
+我的答案： C 
+6.[单选题](5分)
+吧ref放到原生的DOM组件中，我们可以通过refs获取到,  知识点：dom操作 来源：大纲
+A: DOM节点
+B: 组件实例
+C: 组件对象
+D: 组件原型
+正确答案： A 
+试题解析：
+我的答案： A 
+7.[单选题](5分)
+findDOMNode是那个对象的方法,  知识点：dom操作 来源：大纲
+A: react
+B: react-router
+C: react-dom
+D: Component
+正确答案： C 
+试题解析：
+我的答案： C 
+8.[单选题](5分)
+在react在jsx表达式中循环输出jsx可以使用,  知识点：dom操作 来源：大纲
+A: for
+B: map
+C: filter
+D: each
+正确答案： B 
+试题解析：
+我的答案： B 
+9. [多选题] (5分)
+react中获取dom有哪些方法
+A: ref
+B: findDOMNode
+C: unmountComponentAtNode
+D: publish
+正确答案：AB
+试题解析：
+我的答案： AB 
+10. [多选题] (5分)
+以下对于react获取dom说法正确的有？
+A: ref添加到Compoennt上获取的是Compoennt实例
+B: 添加到原生HTML上获取的是DOM
+C: ReactDOM.findDOMNode，当参数是DOM，返回值就是该DOM
+D: 当参数是Component获取的是该Component render方法中的DOM
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+11. [多选题] (5分)
+对于ref和findDOMNOde区别描述正确的有？
+A: refs可以拿子子组件的props/state/方法；
+B: findDOMNOde拿到的是原生的标签相关属性；
+C: 一个获取dom一个获取组件
+D: refs会影响性能
+正确答案：ABD
+试题解析：
+我的答案： AB 
+12. [多选题] (5分)
+ref的值可以是,  知识点：dom操作 来源：日考
+A: 字符串
+B: 布尔值
+C: 数字
+D: 回调函数
+正确答案：AD
+试题解析：
+我的答案： AB 
+13. [多选题] (5分)
+ref可以使用下面那种方法调用,  知识点：dom操作 来源：大纲
+A: this.refs['refname']
+B: this.refs.refname
+C: this.ref
+D: refs
+正确答案：AB
+试题解析：
+我的答案： AB 
+14. [多选题] (5分)
+下面那些方法是react-dom提供的,  知识点：dom操作 来源：大纲
+A: render()
+B: findDOMNode()
+C: append()
+D: addClass()
+正确答案：AB
+试题解析：
+我的答案： AB 
+15. [判断题] (5分)
+ref和findDOMNOde没什么区别都是获取dom
+正确答案： 错 
+试题解析：
+我的答案： 错 
+16. [判断题] (5分)
+refs可以拿子子组件的props/state/方法
+正确答案： 对 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+findDOMNode当参数是Component获取的是该Component render方法中的DOM
+正确答案： 对 
+试题解析：
+我的答案： 对 
+18. [判断题] (5分)
+react中可以通过findDOMNode(组件实例) 返回对应dom,  知识点：dom操作 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [判断题] (5分)
+ref的值可以是数字,  知识点：dom操作 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+20. [判断题] (5分)
+通过refs可以获取使用ref设置属性的dom,  知识点：dom操作 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 

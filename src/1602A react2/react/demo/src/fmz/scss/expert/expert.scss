@@ -1,0 +1,111 @@
+.expert{
+    width: 100%;
+    height: 100%;
+}
+.recom,.more{
+    width: 100%;
+    
+    &>a{
+        width: 100%;
+        display: block;
+        padding:5px 0;
+        background: rgb(248, 245, 245);
+        color:#666;
+        text-indent: 20px;
+    }
+    ul{
+        width: 100%;
+        li{
+            width: 100%;
+            padding:10px 15px;
+            display: flex;
+            border-bottom:1px solid #eee;
+            align-items: center;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: block;
+            }
+            .tit{
+                flex: 1;
+                margin-left: 15px;
+                span{
+                    color:#666;
+                }
+            }
+        }
+    }
+}
+.more{
+    position: relative;
+}
+.mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.hot{
+    width: 100%;
+    background: #fff;
+    &>h3{
+        width: 100%;
+        display: block;
+        padding:5px 0;
+        background: rgb(248, 245, 245);
+        color:#666;
+        text-indent: 20px;
+    }
+    .tab{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-bottom:1px solid #eee;
+        span{
+            flex: 1;
+            text-align: center;
+            border-right:1px solid #eee;
+        }
+        span.on{
+            color: #d74c45;
+        }
+    }
+    ul{
+        width: 100%;
+        background: #fff;
+        li{
+            padding:4px 20px;
+        }
+        li.on{
+            color: #d74c45;
+        }
+    }
+}
+.person{
+    width: 100%;
+    padding:15px 0;
+    ul{
+        overflow-x:auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        li{
+            width: 50px;
+            margin:0 10px;
+            text-align: center;
+            flex-shrink: 0;
+            img{
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+            }
+        }
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}

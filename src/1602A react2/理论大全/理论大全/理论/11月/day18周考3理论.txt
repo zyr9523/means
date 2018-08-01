@@ -1,0 +1,168 @@
+﻿
+一.单选题：每题3分 共20道 （60分）
+1.	在哪个生命周期发出 AJAX 请求最合适？  A
+	A. componentDidMount
+	B. componentWillMount
+	C. shouldComponentUpdate
+	D. constructor
+2. 关于容器组件说法错误的是？ D
+	A. 负责管理数据和业务逻辑，不负责 UI 的呈现
+	B. 带有内部状态
+	C. 使用 Redux 的 API
+	D. 只负责呈现UI，不负责数据逻辑也业务
+3.  箭头函数描述错误的是？A
+	A. 可以使用arguments对象
+	B. 函数体内的this指向调用时所在的对象
+	C. 不可以使用new命令
+	D. 函数体内的this指向定义时所在的对象
+4. 如何在jsx语法中书写表达式？A
+	A. {} 
+	B. {{}}
+	C. ()
+	D. ‘’
+5. 对于受控组件说法正确的是？ A
+	A. 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+	B. 一个受控的组件自己维护自己的state
+	C. 没有value属性
+	D. 没办法更改value
+6. 调用 setState() 时，React 会不会将你提供的对象合并到当前状态？A 
+	A. 会
+	B. 不会
+	C. 有时候会
+	D. 会生成新的对象
+7. 以下对于高阶组件描述正确的是？ B
+	A. 高阶组件就是普通的组件
+	B. 高阶组件类似高阶函数，他接受react组件作为输入，输出一个新的react组件
+	C. 高阶组件接受函数作为输入，或输出一个函数
+	D. 高阶组件不可以控制props和state
+8.  [mapStateToProps(state, [ownProps]): stateProps]描述错误的是？  D
+	A. 如果定义该参数，组件将会监听 Redux store 的变化，只要 Redux store 发生改变，mapStateToProps 函数就会被调用
+	B. 如果你省略了state参数，你的组件将不会监听 Redux store
+	C. 只要 Redux store 发生改变，mapStateToProps 函数就会被调用。该回调函数必须返回一个纯对象，这个对象会与组件的 props 合并
+	D. 组件接收到新的 props，mapStateToProps 不会被调用
+9.  [mapDispatchToProps(dispatch, [ownProps]): dispatchProps]描述错误的是？D
+	A. 接受redux的dispatch方法作为参数
+	B. 返回当前组件相关部分的action creater
+	C. 只要组件接收到新 props，mapDispatchToProps 也会被调用
+	D. 在这里不可以将action creater与dispatch绑定
+10.  select中通过添加什么属性实现多选下拉列表？A
+	A. multiple={true}
+	B. type=checkbox
+	C. checked={true}
+	D. selected=true
+11.  非受控组件input可以通过什么来表示组件的默认状态？A
+	A. defaultValue
+	B. props
+	C. value
+	D. defaultChecked
+12. 什么属性可以引用组件真正实例？ A
+	A. ref
+	B. class
+	C. id
+	D. value
+13.  什么情况下会触发componentWillReceiveProps这个生命周期 C
+	A.  组件接收到新的state时
+	B.  组件重新渲染时
+	C.  组件接收到新的props时
+	D. 当前组件修改props的时候
+14.  在 React 中 Element 和 Component 描述错误的是？D
+	A. 一个 React element 是一些 UI 的对象表示
+	B. 一个 React Component 是一个函数或一个类
+	C. React Component返回 React element
+	D. 在react中 element返回 component
+15. 使用es6 class类定义组件的时候 constructor函数中必须要写什么？A
+	A. super()
+	B.this.state
+	C.this.props
+	D.this.defaultProps
+16.  不是Redux三大原则的选项是？B
+	A. 单一数据源
+	B.惟一改变 state 的方法就是触发 setState
+	C.State 是只读的
+	D.使用纯函数来执行修改
+17.  在redux中combineReducers的作用是什么？ D
+	A. 将action执行函数返回一个函数 
+	B. 将reducer返回的内容改变
+	C. 将reducer的值修改
+	D. 把一个由多个不同 reducer 函数作为 value 的 object，合并成一个最终的 reducer 函数
+18. 导航选中激活时候应用的样式名是？A
+	A. activeClassName
+	B. active
+	C. activeStyle
+	D. isActive
+19. Object.assign()方法如何不改变原对象？A
+	A. 将第一个参数给空对象
+	B. 将最后一个参数给空对象 
+	C. 只填一个参数 
+	D. 第一个参数设为true
+20. reducer的作用是什么？C
+	A. 执行的动作类型
+	B. 链接store
+	C. 接收action和当前的state作为参数，返回一个新的state
+	D. 跳转路由
+
+二.填空题：每题2分 共5道 （10分）
+1.	redux的作用是___管理复杂的页面___ 
+2.	__高阶____组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件 
+3.	const store = createStoreMiddleware({})
+store.__ dispatch _____(fetchPost(‘reactjs’)) 补全代码实现action派发 
+4.	一个没有value属性的<input>就是一个__非受控___组件 
+5.	用来包装根级组件并且提供整个应用数据状态的组件是__Provider___ 
+三.多选题：每题2分 共10道 （20分）
+1.	redux的三大原则是哪些？ ABC
+	A.  单一数据源
+	B.  State 是只读的
+	C.  使用纯函数来执行修改
+	D.  数据双向绑定
+2. redux中包含哪些内容？ AB
+	A. action
+	B. reducer
+	C. mutations
+	D. 组件
+3. JSX优点？ ABC
+	A.  JSX执行更快，因为它对编译js代码进行了优化
+	B.  它是类型安全的，在编译过程中就能发现错误
+	C. 使用jsx编译模板更加简洁快速。
+	D. jsx语法中不能使用表达式
+4. connect接受的参数都有哪些？ABC
+	A.  [mapStateToProps(state, [ownProps]: stateProps)]（类型：函数）
+	B.  [mapDispatchToProps(dispatch, [ownProps]): dispatchProps]（类型：对象或函数）
+	C. [mergeProps(stateProps, dispatchProps, ownProps): props]（类型：函数）
+	D. [options](类型：对象)
+5.关于keys描述正确的是？ABC
+	A. 键(Keys) 帮助 React 标识哪个项被修改、添加或者移除了。
+	B. 数组中的每一个元素都应该有一个唯一不变的键(Keys)来标识
+	C. keys 在同辈元素中必须是唯一的
+	D. keys对提高性能没作用
+6. 以下对于高阶组件描述正确的是？ABCD
+	A. 高阶组件会给被包裹组件传递所有的属性(props)
+	B. 不要在render函数中使用高阶组件
+	C. 高阶组件是一个函数，能够接受一个组件并返回一个新的组件
+	D. 不要改变原始组件，使用组合
+7. 以下哪些属于路由history对象的方法和属性？ ABCD
+	A.  location
+	B.  replace
+	C. go 
+	D. push
+8. props和state的区别正确的是？ AB
+	A.  props是不可变的
+	B.  state用来管理组件内部的状态
+	C. props在组件内可随意更改
+	D. state可以用于管理组件外部的状态
+9. React中调用setState之后发生了什么事情？ ABCD
+	A.  React会将当前传入的参数对象与组件当前的状态合并
+	B.  React会以相对高效的方式根据新的状态构建React元素树并且重新渲染整个UI界面
+	C. React得到的元素树之后,React会自动计算出新的树与老的树的节点的差异
+	D. 然后根据差异对界面进行最小化的渲染
+10. 以下属于event属性和方法的有哪些？ABCD
+	A. target
+	B. stopPropagation()
+	C. type
+	D. preventDefault()
+
+四.判断题：每题2分 共5道 （10分）
+1.	高阶组件不是纯函数  X
+2.	react有更新时一定会更新整个dom树   X
+3.	一个表单没有value props（单选按钮和复选框对应的是checked prop），就可称为非受控组件   V
+4.	<input type='text' defaultValue='hello' onChange={this.handleChange.bind(this)}> 触发handleChange函数，更改了value，会触发页面渲染  X
+5.	 组件是将props转化成UI，然而高阶组件将一个组价转化成另外一个组件 V

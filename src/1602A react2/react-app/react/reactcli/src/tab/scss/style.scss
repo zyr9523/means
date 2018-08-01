@@ -1,0 +1,38 @@
+@import url('./conmon.css');
+html,body,#root,.wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    width: 20%;
+    background: #eee;
+    ul{
+        width: 100%;
+        li{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        li.active{
+            color:orangered;
+        }
+    }
+}
+section{
+    flex: 1;
+}
+.scroll{
+    li{
+        img{
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

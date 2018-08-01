@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    list:[
+                        {
+                            id:0,
+                            title:'Navigation One',
+                            arr:['Option1','Option2','Option3','Option4'],
+                            isShow:false
+                        },
+                        {
+                            id:1,
+                            title:'Navigation Two',
+                            arr:['Option5','Option6','Option7','Option8'],
+                            isShow:false
+                        },
+                        {
+                            id:2,
+                            title:'Navigation Three',
+                            arr:['Option9','Option10','Option11','Option12'],
+                            isShow:false
+                        }
+                    ]
+                }
+            }
+            render(){
+                let {list} = this.state;
+                return (
+                    <div>
+                        {
+                            list.map((item,index)=>{
+                                return <div key={index} onClick={this.clickShow.bind(this,index,item)}>{item.title}
+                                {item.isShow?<Child item={item.arr}/>:null}
+                                </div>
+                            })
+                        }
+                    </div>
+                )
+            }
+            clickShow(index,item){
+                let {list} = this.state;
+                if(!list[index].isShow){
+                    list.forEach((val)=>{
+                        val.isShow = false
+                    });
+                }
+                list[index].isShow = !list[index].isShow;
+                this.setState({
+                    list
+                })
+            }
+        }
+        class Child extends React.Component{
+            render(){
+                let {item} = this.props;
+                return (
+                    <div>
+                        {
+                            item.map((val,ind)=>{
+                                return <p key={ind}>{val}</p>
+                            })
+                        }
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<App/>,document.querySelector('#root'))
+    </script>
+</body>
+</html>

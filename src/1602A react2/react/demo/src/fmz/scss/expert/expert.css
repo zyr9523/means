@@ -1,0 +1,132 @@
+.expert {
+  width: 100%;
+  height: 100%;
+}
+
+.recom, .more {
+  width: 100%;
+}
+
+.recom > a, .more > a {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  background: #f8f5f5;
+  color: #666;
+  text-indent: 20px;
+}
+
+.recom ul, .more ul {
+  width: 100%;
+}
+
+.recom ul li, .more ul li {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.recom ul li img, .more ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+}
+
+.recom ul li .tit, .more ul li .tit {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.recom ul li .tit span, .more ul li .tit span {
+  color: #666;
+}
+
+.more {
+  position: relative;
+}
+
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hot {
+  width: 100%;
+  background: #fff;
+}
+
+.hot > h3 {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  background: #f8f5f5;
+  color: #666;
+  text-indent: 20px;
+}
+
+.hot .tab {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.hot .tab span {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.hot .tab span.on {
+  color: #d74c45;
+}
+
+.hot ul {
+  width: 100%;
+  background: #fff;
+}
+
+.hot ul li {
+  padding: 4px 20px;
+}
+
+.hot ul li.on {
+  color: #d74c45;
+}
+
+.person {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.person ul {
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.person ul li {
+  width: 50px;
+  margin: 0 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.person ul li img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

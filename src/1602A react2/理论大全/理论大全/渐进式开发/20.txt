@@ -1,0 +1,171 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0087-  
+渐进式开发20
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+对虚拟dom描述错误的是？
+A: 用JS表示DOM结构
+B: 比较两棵DOM树的差异是 Virtual DOM 算法最核心的部分
+C: React又通过在这个虚拟DOM上实现了一个 diff 算法找出最小变更，再把这些变更写入实际的DOM中
+D: diff后的差异不会应用到真正的DOM树上
+正确答案： D 
+试题解析：
+我的答案： D 
+2.[单选题](5分)
+在react应用中获取store数据的方法是？
+A: connect()
+B: dispatch()
+C: reducer
+D: store
+正确答案： A 
+试题解析：
+我的答案： B 
+3.[单选题](5分)
+不能实现对象深拷贝的方法的是？
+A: JSON.stringify(JSON.parse(obj))
+B: $.extend()
+C: Object.assign()
+D: Object.create()
+正确答案： C 
+试题解析：
+我的答案： C 
+4.[单选题](5分)
+react中实现子向父传参，以下说法正确的是？
+A: 通过props可以实现子向父传参
+B: 可以通过子级调用父级组件的props属性实现子向父通信
+C: 通过state可以实现子向父通信
+D: 可以通过constructor实现子向父传参
+正确答案： B 
+试题解析：
+我的答案： B 
+5.[单选题](5分)
+reducer的返回值须是什么？
+A: this.state
+B: props
+C: newState
+D: oldState
+正确答案： C 
+试题解析：
+我的答案： C 
+6.[单选题](5分)
+能使组件调用自身的render()方法重新渲染组件的方法是？
+A: forceUpdate
+B: update
+C: beforeupdate
+D: afterupdate
+正确答案： A 
+试题解析：
+我的答案： A 
+7.[单选题](5分)
+React的特点是函数式编程和     知识点：受控组件  来源：大纲
+A: MVVM
+B: 单向数据流
+C: 脏检查)
+D: 双向绑定
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](5分)
+(state, action) => state 的纯函数是用来做    知识点：redux     来源：大纲
+A: action
+B: store
+C: reducer
+D: react
+正确答案： C 
+试题解析：
+我的答案： C 
+9.[单选题](5分)
+为了实现异步action应该使用下面那个中间件
+知识点：redux      来源：大纲
+A: redux-logger
+B: redux-logge
+C: tredux-thunk
+D: react-thunk
+正确答案： C 
+试题解析：
+我的答案： C 
+10.[单选题](5分)
+react中ref作用在组件上返回的是      知识点：组件 通信来源：大纲
+A: 组件dom
+B: 组件虚拟don
+C: 组件实例
+D: 组件的state
+正确答案： C 
+试题解析：
+我的答案： C 
+11. [多选题] (5分)
+redux中createdStore方法创建的store是一个对象，包含以下哪些方法？
+A: getState()
+B: dispatch(action)
+C: subscribe(listener)
+D: replaceReducer(nextReducer)
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+12. [多选题] (5分)
+redux中包含以下哪些内容？
+A: action
+B: reducer
+C: mutations
+D: 组件
+正确答案：AB
+试题解析：
+我的答案： AB 
+13. [多选题] (5分)
+下面那些知识点属于react中的知识      知识点：框架 来源：大纲
+A: 单项数据流
+B: 双向绑定
+C: 单页面路由
+D: jsx
+正确答案：ACD
+试题解析：
+我的答案： ACD 
+14. [多选题] (5分)
+ref的值可以是那些内容   知识点：REF   来源：大纲
+A: 字符串
+B: 数字
+C: 函数
+D: 对象
+正确答案：AC
+试题解析：
+我的答案： AC 
+15. [多选题] (5分)
+react关于事件描述正确的是    知识点:事件 来源：大纲
+A: 没有兼容问题
+B: 不能使用return falsee阻止默认行为
+C: 内部默认情况下没有this
+D: 使用bind可以绑定this
+正确答案：ABD
+试题解析：
+我的答案： ABD 
+16. [判断题] (5分)
+不可以在组件中直接修改props
+正确答案： 对 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+react中在jsx上可以使用过滤器   知识点：react  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+react中可以使用v-model实现数据双向绑定  知识点：react  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+19. [判断题] (5分)
+react中使用provider组件传递state     知识点：redux 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+store相当于那个唯一的state  知识点：redux  来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 

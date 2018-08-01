@@ -1,0 +1,331 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0067-  
+渐进式开发周考3
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[40]单选题[20]多选题[10]判断题[10]
+试卷总分：100
+1.[单选题](3分)
+调用 setState() 时，React 会不会将你提供的对象合并到当前状态?
+A: 会
+B: 不会
+C: 有时候会
+D: 有时候不会
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](3分)
+在 React 当中 Element 和 Component 描述错误的是？
+A: 一个 React element 是一些 UI 的对象表示
+B: 一个 React Component 是一个函数或一个类
+C: React Component返回 React element
+D: react中 Component和Element没区别
+正确答案： D 
+试题解析：
+我的答案： D 
+3.[单选题](3分)
+修饰器（Decorator）函数描述正确的是？
+A: 用来修改类的行为
+B: 不能修改类的行为
+C: 用来修改函数
+D: 用来修改函数的行为
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](3分)
+react定义组件有几种方式
+A: 1
+B: 2
+C: 3
+D: 4
+正确答案： C 
+试题解析：
+我的答案： C 
+5.[单选题](3分)
+对于受控组件说法正确的是？
+A: 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+B: 一个受控的组件自己维护自己的state
+C: 没有value属性
+D: 没办法更改value
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](3分)
+下面jsx语法编写正确的是      知识点：jsx 来源：大纲
+A: <div class="name"></div>
+B: <div classname="name"></div>
+C: <div className="name"></div>
+D: <div ClassName="name"></div>
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](3分)
+展示组件的创建方式应该使用   知识点：react组件  来源：大纲
+A: 函数式
+B: class
+C: creatClass
+D: prototype
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](3分)
+下面那种修改state的方式是正确的    知识点：组件状态   来源：大纲
+A: name="aaa"
+B: this.name="aaa"
+C: this.state.name="aaa"
+D: this.setState({name:'aaa'})
+正确答案： D 
+试题解析：
+我的答案： D 
+9.[单选题](3分)
+在路由对应的组件内部的组件如果要获取 match属性则需要 知识点：react组件  来源：大纲
+A: withRouter()
+B: history()
+C: location()
+D: match()
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](3分)
+在react中ref的值是函数的话，在组件销毁的时候会给ref函数中传入 知识点：dom操作  来源：大纲
+A: 字符串
+B: null
+C: 对象
+D: 布尔
+正确答案： B 
+试题解析：
+我的答案： B 
+11.[单选题](3分)
+react中应用什么技术保证高速的UI渲染   知识点：优化  来源：大纲
+A: 虚拟DOM
+B: 单向数据流
+C: 双向绑定
+D: MVC设计模式
+正确答案： A 
+试题解析：
+我的答案： A 
+12.[单选题](3分)
+ref作用在dom元素上的时候使用refs获取对应的ref返回的是  知识点：dom操作  来源：大纲
+A: 组件对应的dom
+B: 组件对应的实例
+C: dom
+D: 以上都不对
+正确答案： C 
+试题解析：
+我的答案： C 
+13.[单选题](3分)
+在react中列表遍历渲染，通过什么方法可以提高虚拟dom的效率。
+     知识点：优化 来源：大纲
+A: shouldComponentUpdate
+B: 添加key
+C: DOM
+D: 添加Id
+正确答案： B 
+试题解析：
+我的答案： B 
+14.[单选题](3分)
+在react合成事件中this默认情况下是  知识点：事件处理  来源：大纲
+A: window
+B: dom
+C: null
+D: undefined
+正确答案： D 
+试题解析：
+我的答案： D 
+15.[单选题](3分)
+react中如何实现vue中v-model的效果  知识点：事件处理  来源：大纲
+A: v-model
+B: ng-model
+C: 受控组件
+D: r-model
+正确答案： C 
+试题解析：
+我的答案： C 
+16.[单选题](3分)
+<Redirect>组件是用来干什么的    知识点：事件处理  来源：大纲
+A: 重定向
+B: 跳转新页面
+C: 替换当前页面
+D: 关闭页面
+正确答案： A 
+试题解析：
+我的答案： A 
+17.[单选题](3分)
+Provider组件需要传递什么内容    知识点：redux 通信来源：大纲
+A: state
+B: store
+C: props
+D: context
+正确答案： B 
+试题解析：
+我的答案： B 
+18.[单选题](3分)
+redux中添加中间件需要使用那个方法   知识点：redux  来源：大纲
+A: combineReducers
+B: applyMiddleware
+C: bindActionCreators
+D: compose
+正确答案： B 
+试题解析：
+我的答案： B 
+19.[单选题](3分)
+下面那个中间件可以用来实现异步action 知识点：redux  来源：大纲
+A: redux-thunk
+B: redux-logger
+C: react-logger
+D: react-thunk
+正确答案： A 
+试题解析：
+我的答案： A 
+20.[单选题](3分)
+action中必须存在什么属性   知识点：redux   来源：大纲
+A: name
+B: type
+C: age
+D: reducers
+正确答案： B 
+试题解析：
+我的答案： B 
+21. [多选题] (2分)
+下面那些事件是react支持的事件,  知识点：事件处理 来源：大纲
+A: click
+B: onFocus
+C: onChange
+D: tap
+正确答案：BC
+试题解析：
+我的答案： BC 
+22. [多选题] (2分)
+下面那些方法是属于store的方法    知识点：redux 来源：大纲
+A: getState()
+B: dispatch(action)
+C: subscribe(listener)
+D: createStore()
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+23. [多选题] (2分)
+redux连接到 React我们需要   知识点redux 来源：大纲
+A: 渲染之前将根组件包装进 <Provider>
+B: 通过 react-redux 提供的 connect() 方法将包装好的组件连接到Redux
+C: 定义reducer
+D: 定义action
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+24. [多选题] (2分)
+redux的3大原则是    知识点：redux 来源：大纲
+A: State 是只读的
+B: 单一数据源
+C: 使用Reducer 来执行修改
+D: 和vuex一样
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+25. [多选题] (2分)
+react的优化方法有   知识点：优化 来源：大纲
+A: 组件执行 shouldComponentUpdate 方法，自行决定是否更新
+B: 给列表中的组件添加key属性
+C: 使用PureRenderMixin
+D: 组件执行 componentWillReceiveProps 方法，自行决定是否更新
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+26. [多选题] (2分)
+react中更新UI的方式都有哪些？
+A: ReactDOM.render()
+B: this.setState()
+C: 使用redux更改数据
+D: click
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+27. [多选题] (2分)
+在react中给事件绑定this的方法正确的是？
+A: <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+B: 在constructor构造函数中使用 this.deleteRow=this.deleteRow.bind(this)
+C: <button onClick={this.deleteRow}>Delete Row</button>
+D: <button onClick={(e) => this.deleteRow(e)}>Delete Row</button>
+正确答案：ABD
+试题解析：
+我的答案： ABD 
+28. [多选题] (2分)
+react元素可以是以下什么？
+A: dom标签
+B: 自定义组件
+C: class
+D: div
+正确答案：ABD
+试题解析：
+我的答案： ABD 
+29. [多选题] (2分)
+shouldComponentUpdate 返回值不是什么？
+A: number
+B: 布尔值
+C: string
+D: array
+正确答案：ACD
+试题解析：
+我的答案： ACD 
+30. [多选题] (2分)
+以下属于reducer禁止操作的事情有哪些？
+A: 修改传入参数
+B: 执行有副作用的操作，如 API 请求和路由跳转
+C: 调用非纯函数，如 Date.now() 或 Math.random()
+D: 更新state
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+31. [判断题] (2分)
+必须使用createStore才能创建store 知识点：dom操作  来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+32. [判断题] (2分)
+react中使用了虚拟dom提高了ui渲染  知识点：dom操作 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+33. [判断题] (2分)
+在react中和redux关联的时候必须使用connect函数   知识点：redux  来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+34. [判断题] (2分)
+this.state.name="aaa"可以修改state值，并且触发渲染   知识点：状态  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+35. [判断题] (2分)
+redux只能使用在react中    知识点：状态  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+36. [判断题] (2分)
+react中的事件都需要addEventListener监听 ？
+正确答案： 错 
+试题解析：
+我的答案： 错 
+37. [判断题] (2分)
+组件的返回值只能有一个根元素
+正确答案： 对 
+试题解析：
+我的答案： 对 
+38. [判断题] (2分)
+react有更新时一定会更新整个dom树
+正确答案： 错 
+试题解析：
+我的答案： 错 
+39. [判断题] (2分)
+高阶组件是纯函数，没有副作用
+正确答案： 对 
+试题解析：
+我的答案： 对 
+40. [判断题] (2分)
+在React中，是把真实的DOM转换成JavaScript对象树，也就是所谓的虚拟DOM。
+正确答案： 对 
+试题解析：
+我的答案： 错 

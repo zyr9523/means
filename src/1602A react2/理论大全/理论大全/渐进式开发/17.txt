@@ -1,0 +1,171 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0037-  
+渐进式开发17
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+componentWillUnmount生命周期的作用正确的是？
+A: 在渲染前调用
+B: 在组件完成更新后立即调用
+C: 组件从 DOM 中移除的时候立刻被调用
+D: js方法在第一次渲染后调用，只在客户端
+正确答案： C 
+试题解析：
+我的答案： 
+2.[单选题](5分)
+react中一般使用____做props的验证？
+A: propTypes
+B: props
+C: propsType
+D: props-type
+正确答案： A 
+试题解析：
+我的答案： 
+3.[单选题](5分)
+判断组件挂载状态可使用什么方法？
+A: isMounted
+B: findDOMNode
+C: setState
+D: forceUpdate
+正确答案： A 
+试题解析：
+我的答案： 
+4.[单选题](5分)
+resolve.alias的作用是
+A: 对引用的文件设置别名
+B: 对文件引用
+C: 对解析文件名
+D: 解析文件
+正确答案： A 
+试题解析：
+我的答案： 
+5.[单选题](5分)
+setState回调函数会在什么时候触发？
+A: 在setState设置成功，且组件重新渲染后调用
+B: 在setState设置成功，且组件重新渲染前调用
+C: 在setState设置前，且组件重新渲染后调用
+D: 在setState设置前，且组件重新渲染前调用
+正确答案： A 
+试题解析：
+我的答案： 
+6.[单选题](5分)
+jsx的特点描述错误的是？
+A: JSX 允许在模板中插入数组，数组会自动展开所有成员
+B: React 推荐使用内联样式
+C: jsx语法中可以使用表达式
+D: jsx语法中的注释写在小括号中
+正确答案： D 
+试题解析：
+我的答案： 
+7.[单选题](5分)
+以下什么方法不再派发事件
+A: event.target
+B: event.preventDefault
+C: event.stopPropagation
+D: event.type
+正确答案： C 
+试题解析：
+我的答案： 
+8.[单选题](5分)
+在react中最小单位是  知识点：组件  来源：大纲
+A: 组件
+B: 事件
+C: 状态
+D: 元素
+正确答案： D 
+试题解析：
+我的答案： 
+9.[单选题](5分)
+如何设置组件默认的props值
+知识点：生命周期 来源：大纲
+A: defaultProps
+B: Defaultprops
+C: static defaultProps
+D: static defaultprops
+正确答案： C 
+试题解析：
+我的答案： 
+10.[单选题](5分)
+react中如何阻止事件默认行为 ：知识点：dom操作 来源：大纲
+A: event.preventDefault
+B: event.target
+C: event.stop
+D: event.prevent
+正确答案： A 
+试题解析：
+我的答案： 
+11. [多选题] (5分)
+以下属于event属性和方法的是哪些？
+A: target
+B: stopPropagation()
+C: type
+D: preventDefault()
+正确答案：ABCD
+试题解析：
+我的答案： 
+12. [多选题] (5分)
+组件的生命周期可分成以下哪几个状态？
+A: Mounting
+B: Updating
+C: Unmounting
+D: Padding
+正确答案：ABC
+试题解析：
+我的答案： 
+13. [多选题] (5分)
+组件在Mounting阶段有几个方法？
+A: constructor()
+B: componentWillMount()
+C: render()
+D: componentDidMount()
+正确答案：ABCD
+试题解析：
+我的答案： 
+14. [多选题] (5分)
+react存在期生命周期有   知识点：生命周期  来源：大纲
+A: shouldComponentUpdate
+B: componentWillMount
+C: componentWillUnmount
+D: componentWillReceiveProps
+正确答案：ABD
+试题解析：
+我的答案： 
+15. [多选题] (5分)
+react生命周期有那些阶段    知识点:事件 来源：大纲
+A: 实例化
+B: 存在期
+C: 销毁期
+D: 更新期
+正确答案：ABC
+试题解析：
+我的答案： 
+16. [判断题] (5分)
+shouldComponentUpdate返回false，props发生改变，视图会重新渲染
+正确答案： 错 
+试题解析：
+我的答案： 
+17. [判断题] (5分)
+React 是 google 推出的一个用来构建用户界面的 JavaScript 库
+正确答案： 对 
+试题解析：
+我的答案： 
+18. [判断题] (5分)
+react生命周期一共有11个   知识点：生命周期 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 
+19. [判断题] (5分)
+在子组件内部可以使用setState改变props  知识点：组件 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 
+20. [判断题] (5分)
+componentWillReceiveProps生命周期中可以修改props或者state   知识点：优化：大纲
+正确答案： 对 
+试题解析：
+我的答案： 

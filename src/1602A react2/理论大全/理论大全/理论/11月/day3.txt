@@ -1,0 +1,157 @@
+单选
+1：componentWillUnmount这个生命周期在react中的作用是什么？ B
+
+ A  接收到新的props或者state后
+
+ B  组件被移除之前被调用，可以用于做一些清理工作
+
+ C  完成渲染新的props或者state后调用
+
+ D  组件是否应当渲染新的props或state
+
+2：什么情况下会触发componentWillReceiveProps这个生命周期 A
+
+A 组件接收到新的props时
+
+B 组件接收到新的state时
+
+C组件重新渲染时 
+ 
+D当前组件修改props的时候
+
+3：componentDidMount说法不正确的有？D
+
+A 真实的DOM被渲染出来后调用
+
+B 可以访问真实的dom
+
+C在服务端中，该方法不会被调用
+
+D真实dom渲染之前调用
+
+4：以下哪些生命周期只调用一次？A
+
+A getDefaultProps
+
+B "componentWillReceiveProps
+"
+
+C render
+
+D "shouldComponentUpdate
+"
+
+5：下面那个方法能使组件调用自身的render()方法重新渲染组件  A
+A "forceUpdate
+"
+
+B update
+
+C beforeupdate
+
+D afterupdate
+
+6：以下属于实例期的有哪些？ C
+A componentWillReceiveProps
+
+B shouldComponentUpdate
+
+C componentWillMount
+
+D componentWillUnmount
+
+7：以下描述错误的是？
+A componentWillReceiveProps属于存在期  C
+
+B shouldComponentUpdate属于存在期
+
+C componentWillUnmount属于存在期
+
+D
+
+8：如何在react.component定义组件时定义初始化的state  C
+A getDefaultProps
+
+B getInitialState
+
+C constructor中设置this.state
+
+D.
+
+多选
+
+9：以下属于react存在期的生命周期有哪些？ ABC
+
+A componentWillReceiveProps
+
+B shouldComponentUpdate
+
+C componentWillUpdate
+
+D componentWillMount
+
+10：react组件分为哪几个大的周期？ABC
+A 实力化
+
+B 存在期
+
+C 销毁期
+
+D 更改期
+
+11：对于shouldComponentUpdate描述正确的是？ABC
+ 
+A 组件是否应当渲染新的props或state
+
+B 返回false表示跳过后续的生命周期方法
+
+C "在首次渲染期间或者调用了forceUpdate方法后，该方法不会被调用
+"
+
+D 可以不用指定返回值
+
+12：componentWillReceiveProps描述正确的是？ ABC
+
+A 组件接收到新的props时调用
+
+B 并将其作为参数nextProps使用
+
+C 此时可以更改组件props及state
+
+D
+
+判断
+13：render函数是必写的函数否则组件无法正常显示   T
+
+14："初始化每个实例的state只能使用getInitialState
+" F
+ 
+15：react设置默认的props只能使用getDefaultProps  F
+
+16：react生命周期一共有10个 T
+
+17：componentWillMount完成首次渲染之前调用，此时仍可以修改组件的state  T
+
+18：componentDidMount可以获取真实的dom元素  T
+
+19：componentWillReceiveProps可以修改props或者state T 
+
+20："componentWillUpdate可以修改props或者state
+"  F
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

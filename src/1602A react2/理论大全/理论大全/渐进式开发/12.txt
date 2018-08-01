@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0013-  
+渐进式开发12
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[3]填空题(手动判卷)[2]
+试卷总分：100
+1.[单选题](5分)
+[mapStateToProps(state, [ownProps]): stateProps]描述错误的是？
+A: 如果定义该参数，组件将会监听 Redux store 的变化，只要 Redux store 发生改变，mapStateToProps 函数就会被调用
+B: 如果你省略了state参数，你的组件将不会监听 Redux store
+C: 只要 Redux store 发生改变，mapStateToProps 函数就会被调用。该回调函数必须返回一个纯对象，这个对象会与组件的 props 合并
+D: 组件接收到新的 props，mapStateToProps 不会被调用
+正确答案： D 
+试题解析：
+我的答案： D 
+2.[单选题](5分)
+导航选中激活时候应用的样式名是？
+A: activeClassName
+B: active
+C: activeStyle
+D: isActive
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+history 对象没有以下哪些属性和方法？
+A: location
+B: action
+C: length
+D: goTo()
+正确答案： D 
+试题解析：
+我的答案： D 
+4.[单选题](5分)
+connect最多接收几个参数？
+A: 2
+B: 1
+C: 3
+D: 4
+正确答案： D 
+试题解析：
+我的答案： D 
+5.[单选题](5分)
+applyMiddleware是属于下面那个包抛出的方法    知识点：redux  来源：大纲
+A: redux
+B: react-redux
+C: redux-thunk
+D: react-dom
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+dispatch方法是下面那个对象的方法    知识点：redux 来源：大纲
+A: store实例
+B: actions
+C: reducers
+D: state
+正确答案： A 
+试题解析：
+我的答案： A 
+7.[单选题](5分)
+在react路由中传递params数据获取的时候需要在     那个对象中获取     知识点：redux 来源：大纲
+A: state
+B: match
+C: history
+D: location
+正确答案： B 
+试题解析：
+我的答案： B 
+8.[单选题](5分)
+合并多个reducer使用那个函数  知识点：redux   来源：大纲
+A: createStore
+B: combineReducers
+C: applyMiddleware
+D: bindActionCreators
+正确答案： B 
+试题解析：
+我的答案： B 
+9.[单选题](5分)
+Provider组件需要传递    知识点：redux 通信来源：大纲
+A: state
+B: store
+C: props
+D: context
+正确答案： B 
+试题解析：
+我的答案： B 
+10.[单选题](5分)
+react中控制路由跳转的组件使用  ：知识点：路由 来源：大纲
+A: a
+B: href
+C: Link
+D: Route
+正确答案： C 
+试题解析：
+我的答案： C 
+11. [多选题] (5分)
+connect接受的参数都有哪些？
+A: [mapStateToProps(state, [ownProps]: stateProps)]（类型：函数）
+B: [mapDispatchToProps(dispatch, [ownProps]): dispatchProps]（类型：对象或函数）
+C: [mergeProps(stateProps, dispatchProps, ownProps): props]（类型：函数）
+D: [options](类型：对象)
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+12. [多选题] (5分)
+一般action都要注意哪些问题？
+A: action内必须有一个type字段
+B: action必须是一个对象
+C: action可以返回一个字符串
+D: action可以返回一个数组
+正确答案：AB
+试题解析：
+我的答案： AB 
+13. [多选题] (5分)
+以下哪些属于reducer禁止操作的事情？
+A: 修改传入参数
+B: 执行有副作用的操作，如 API 请求和路由跳转
+C: 调用非纯函数，如 Date.now() 或 Math.random()
+D: 更新state
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+14. [多选题] (5分)
+ref的值是函数会在什么时候执行  知识点：redux 来源：大纲
+A: componentDidMount之后
+B: componentDidMount之前
+C: componentDidUpdate之前
+D: componentDidUpdate之后
+正确答案：BC
+试题解析：
+我的答案： BC 
+15. [多选题] (5分)
+redux的3大原则是    知识点：redux 来源：大纲
+A: State 是只读的
+B: 单一数据源
+C: 使用Reducer 来执行修改
+D: 和vuex一样
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+16. [判断题] (5分)
+可以在组件中直接修改props
+正确答案： 错 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+不推荐开发者滥用state，过多的内部状态会让数据流混乱，程序变得难以维护
+正确答案： 对 
+试题解析：
+我的答案： 对 
+18. [判断题] (5分)
+state只关心组件自己内部的状态，props会向下遍历整颗DOM树
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [填空题(手动判卷)] (5分)
+connect中第________参数可以获取到dispatch   知识点：redux 来源：大纲
+正确答案： 2 
+试题解析：
+我的答案： 2 
+20. [填空题(手动判卷)] (5分)
+添加中间件需要添加到createStore方法中的第__________几个参数    知识点：redux 来源：大纲
+正确答案： 2 
+试题解析：
+我的答案： applyMiddleware 

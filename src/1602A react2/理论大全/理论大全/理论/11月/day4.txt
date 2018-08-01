@@ -1,0 +1,91 @@
+填空：
+1、ref={(input) => this.textInput = input}此处的input指的是谁_____________。
+		当前设置ref的元素，当前元素
+
+
+2、this.setState()补全代码实现设置state______________。
+		{name: value}，传入对象写入将要修改的state名字和指
+
+
+3、<button onClick={this.changedImg}>click</button>将这段代码实现绑定this______________。
+		.bind(this)，{() => this.changedImg}
+
+
+4、this.refs获取到的是什么__________
+		对象，dom节点
+
+
+5、reactDom.unmountComponentAtNode（）方法里接收什么参数___________________。
+		指定的容器
+
+
+6、想在一个组件内操作dom应该在那个什么周期___________________。
+		componentdidmount
+
+
+7、componentWillReceiveProps中nextprops是什么___________。
+		新的props值
+
+
+8、class Child_____________ Parent补全代码实现类的继承。
+		extends
+
+
+9、_____________class Slider补全代码实现默认导出。
+		export default
+
+
+10、class Slider extends __________补全代码实现定义react组件。
+		React.Component
+
+
+11、reactDom.__________可以实现获取真实dmo。
+		findDOMNode
+
+
+12、以下对于findDOMNode说法正确的  A
+A 当参数是DOM，返回值就是该DOM
+B 当参数是Component获取的是该Component?
+C 当参数是Component获取的是该父级组件?
+D null
+
+
+13 以下对于ref说法正确的   B
+A 添加到Compoennt实例上获取到的是dom
+B 添加到dom上获取到的是dom
+C 添加到dom上获取到的是component实例
+D 替换值
+
+
+14 react中获取dom有哪些方法  AB  
+A ref
+B findDOMNode
+C unmountComponentAtNode
+D publish
+
+
+15 以下对于react获取dom说法正确的有？  ABCD  
+A ref添加到Compoennt上获取的是Compoennt实例
+B 添加到原生HTML上获取的是DOM
+C ReactDOM.findDOMNode，当参数是DOM，返回值就是该DOM
+D 当参数是Component获取的是该Component render方法中的DOM
+
+
+16 对于ref和findDOMNOde区别描述正确的有    AB  
+A  refs可以拿子子组件的props/state/方法；
+B findDOMNOde拿到的是原生的标签相关属性；
+C 一个获取dom一个获取组件
+D
+
+
+17 ref和findDOMNOde没什么区别都是获取dom   X  
+
+
+18 refs可以拿子子组件的props/state/方法   Y
+
+
+19 findDOMNode当参数是Component获取的是该Component render方法中的DOM    Y
+
+ 
+20 ref添加到Compoennt实例上获取到的是dom    X
+

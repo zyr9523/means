@@ -1,0 +1,62 @@
+@import url("./reset.css");
+html,
+body,
+#root,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cart .img {
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+}
+
+.cart .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.cart .tit {
+  flex: 1;
+}
+
+.compute {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: space-between;
+}
+
+.compute p {
+  flex: 1;
+}
+
+.compute button {
+  width: 30%;
+  height: 100%;
+  border: none;
+  background: #df4e66;
+  color: #fff;
+}

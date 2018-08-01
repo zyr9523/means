@@ -1,0 +1,94 @@
+填空
+    redux中connect的作用是______				正确答案：连接React组件与 Redux store。	
+	Ant Design是由 _____ 框架实现的			正确答案：react	
+	async函数返回_____						正确答案：Promise对象	
+	箭头函数内的this对象指向____				正确答案：定义时所在的对象，而不是使用时所在的对象	
+1-单选
+	jsx是什么？	正确答案：	B	
+    A:一个第三方包	
+    B:HTML和JavaScript混写的语法，当遇到<，JSX就当HTML解析，遇到{就当JavaScript解析	
+    C:一个框架	
+    D:js方法		
+	react进行渲染元素时要使用什么包或者类库	正确答案：	A	
+    A:react-dom	
+    B:render	
+    C:components	
+    D:component		
+	以下给p标签添加自定义属性正确的是？正确答案：	A	
+        A:"ReactDOM.render(
+        　　<div>
+        　　　　<p data-myattribute = ""somevalue"">hello world!</p>
+        　　</div> ,
+        　　document.getElementById('example')
+        )"	
+        B:"ReactDOM.render(
+        　　<div>
+        　　　　<p myattribute = ""somevalue"">hello world!</p>
+        　　</div> ,
+        　　document.getElementById('example')
+        )"	
+        C:"ReactDOM.render(
+        　　<div>
+        　　　　<p style = ""somevalue"">hello world!</p>
+        　　</div> ,
+        　　document.getElementById('example')
+        )"	
+        D:"ReactDOM.render(
+        　　<div>
+        　　　　<p data = ""somevalue"">hello world!</p>
+        　　</div> ,
+        　　document.getElementById('example')
+
+        )"		
+		
+    在哪个生命周期发出 AJAX 请求最合适?	正确答案：A	
+        A:componentDidMount 	
+        B:componentWillMount 	
+        C:shouldComponentUpdate 	
+        D:constructor			
+	关于容器组件说法错误的是？	正确答案：D
+        A:负责管理数据和业务逻辑，不负责 UI 的呈现	
+        B:带有内部状态	
+        C:使用 Redux 的 API	
+        D:只负责呈现UI，不负责数据逻辑也业务	
+	UI（木偶）组件描述错误的是？	正确答案：D
+        A:只负责 UI 的呈现，不带有任何业务逻辑	
+        B:没有状态（即不使用this.state这个变量）
+        C:所有数据都由参数（this.props）提供	
+        D:使用 Redux 的 API 	
+	jsx的特点描述错误的是？	正确答案：D
+        A:JSX 允许在模板中插入数组，数组会自动展开所有成员	
+        B:React 推荐使用内联样式	
+        C:jsx语法中可以使用表达式	
+        D:jsx语法中的注释写在小括号中				
+	箭头函数描述错误的是？	正确答案：	A	
+        A:可以使用arguments对象	
+        B:不可以使用arguments对象
+        C:不可以使用new命令	
+        D:函数体内的this指向定义时所在的对象		
+ 2-多选	
+	React的特点是？	正确答案：	ABCD
+        A:jsx语法	
+        B:组件化系统	
+        C:Virtual DOM	
+        D:diff算法		
+    JSX优点？	正确答案：	ABC	
+        A:JSX执行更快，因为它对编译js代码进行了优化	
+        B:它是类型安全的，在编译过程中就能发现错误	
+        C:使用jsx编译模板更加简洁快速。	
+        D:jsx语法中不能使用表达式		
+	jsx的特点？正确答案：	ABCD	
+        A:允许自定义标签及组件	
+        B:jsx使用javascript	
+        C:语法跟html非常相似	
+        D:增强js语义		
+	对虚拟dom描述正确的是？	正确答案：	ABCD
+        A:组件的HTML结构并不会直接生成DOM，而是映射生成虚拟的JavaScript DOM结构	
+        B:它直接用JavaScript实现了DOM树	
+        C:React又通过在这个虚拟DOM上实现了一个 diff 算法找出最小变更，再把这些变更写入实际的DOM中	
+        D:这个虚拟DOM以JS结构的形式存在，计算性能会比较好，而且由于减少了实际DOM操作次数，性能会有较大提升	
+判断
+	mobile.ant.design适合做移动端项目，ant.design适合做pc端项目		正确答案:V
+	高阶组件不是纯函数							正确答案：X
+	jsx语法是javascript和xml的混合					正确答案：V	
+	jsx语法中表达式使用{}							正确答案：V

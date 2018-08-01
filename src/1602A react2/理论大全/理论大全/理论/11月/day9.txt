@@ -1,0 +1,114 @@
+3-填空（人工判卷）
+<Route exact path='/' render={() => (
+    
+)}/>补全render函数内的代码实现，默认页面的跳转
+<Redirect to=""/>
+3-填空（人工判卷）
+____可以获取当前路由path中包含的额外数据参数
+match.params
+3-填空（人工判卷）
+Switch组件在什么场景下使用  
+只想渲染出第一个匹配的路由
+3-填空（人工判卷）
+Redirect中那个属性用来控制跳转的地址    
+to
+1-单选
+使用es6 class类定义组件的时候 constructor函数中必须要写什么？
+super()
+this.state
+this.props
+this.defaultProps
+A
+1-单选
+使用以下哪个组件可以实现对当前所有子路由的遍历，并且对第一个匹配到的路径路由进行渲染
+router
+Link
+Switch
+exact 
+C
+1-单选
+以下那个属于react的存在期？
+getDefaultProps
+getInitialState
+componentWillMount 
+shouldComponentUpdate
+D
+1-单选
+componentWillUnmount这个生命周期在react中的作用是什么？ 
+接收到新的props或者state后
+组件被移除之前被调用，可以用于做一些清理工作 
+完成渲染新的props或者state后调用
+组件是否应当渲染新的props或state
+B
+1-单选
+什么情况下会触发componentWillReceiveProps这个生命周期 
+组件接收到新的props时 
+组件接收到新的state时
+组件重新渲染时
+当前组件修改props的时候
+A
+1-单选
+以下哪些生命周期只调用一次？
+getDefaultProps 
+componentWillReceiveProps
+render
+shouldComponentUpdate 
+A
+1-单选
+以下属于实例期的有哪些
+componentWillReceiveProps 
+shouldComponentUpdate 
+componentWillMount 
+ componentWillUnmount
+C
+1-单选
+以下描述错误的是？ 
+componentWillReceiveProps属于存在期 
+shouldComponentUpdate属于存在期
+componentWillUnmount属于存在期
+getDefaultProps属于存在期
+C
+2-多选
+以下哪些属于react-router-dom中的组件
+Switch 
+Route 
+Link 
+router
+ABC
+2-多选
+Redirect中有哪些属性
+  to
+push
+from
+next
+ABC
+2-多选
+history 对象有哪些属性和方法？ 
+location
+replace
+go 
+ push
+ABCD
+2-多选
+match 对象有哪些属性？
+ params
+isExact
+src
+path
+ABD
+2-多选
+Route 组件可以接收以下哪些props？ 
+component
+render
+src
+href
+AB
+0-判断
+Router组件可以使用嵌套的写法
+B
+0-判断
+Switch组件的作用是输出多个组件
+B
+0-判断
+exact关键字的作用是做路径的唯一匹配 
+A

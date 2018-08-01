@@ -1,0 +1,118 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0040-  
+渐进式开发20
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[8]多选题[4]判断题[4]填空题(手动判卷)[4]
+试卷总分：100
+1.[单选题](5分)
+select中通过添加什么属性实现多选下拉列表？
+A: multiple={true}
+B: checkbox
+C: checked={true}
+D: selected
+正确答案： A 
+2.[单选题](5分)
+[mapStateToProps(state, [ownProps]): stateProps]描述错误的是？
+A: 如果定义该参数，组件将会监听 Redux store 的变化，只要 Redux store 发生改变，mapStateToProps 函数就会被调用
+B: 如果你省略了state参数，你的组件将不会监听 Redux store
+C: 只要 Redux store 发生改变，mapStateToProps 函数就会被调用。该回调函数必须返回一个纯对象，这个对象会与组件的 props 合并
+D: 组件接收到新的 props，mapStateToProps 不会被调用
+正确答案： D 
+3.[单选题](5分)
+导航选中激活时候应用的样式名是？
+A: activeClassName
+B: active
+C: activeStyle
+D: isActive
+正确答案： A 
+4.[单选题](5分)
+Action Creator描述错误的是什么？
+A: 是一个创建 action 的函数
+B: 是一个信息的负载
+C: action creator 是一个创建 action 的工厂
+D: 调用 action creator 只会生产 action，但不分发
+正确答案： B 
+5.[单选题](5分)
+[mapDispatchToProps(dispatch, [ownProps]): dispatchProps]描述错误的是？
+A: 接受redux的dispatch方法作为参数
+B: 返回当前组件相关部分的action creater
+C: 只要组件接收到新 props，mapDispatchToProps 也会被调用
+D: 在这里不可以将action creater与dispatch绑定
+正确答案： D 
+6.[单选题](5分)
+connect最多接收几个参数？
+A: 2
+B: 1
+C: 3
+D: 4
+正确答案： D 
+7.[单选题](5分)
+<input type="text" />这是什么组件？
+A: 受控组件
+B: 非受控组件
+C: 只要组件接收到新 props，mapDispatchToProps 也会被调用
+D: 在这里不可以将action creater与dispatch绑定
+正确答案： B 
+8.[单选题](5分)
+什么属性可以引用组件真正实例？
+A: ref
+B: class
+C: id
+D: value
+正确答案： A 
+9. [多选题] (5分)
+关于redux描述正确的是？
+A: 应用中所有的 state 都以一个对象树的形式储存在一个单一的 store 中
+B: 惟一改变 state 的办法是触发 action，一个描述发生什么的对象。
+C: 为了描述 action 如何改变 state 树，你需要编写 reducers。
+D: redux中不可以修改数据
+正确答案：ABC
+10. [多选题] (5分)
+一般action要注意的问题是哪些？
+A: action内必须有一个type字段
+B: 还需要一个参数
+C: action可以返回一个字符串
+D: action可以返回一个数组
+正确答案：AB
+11. [多选题] (5分)
+以下属于reducer禁止操作的事情有哪些？
+A: 修改传入参数
+B: 执行有副作用的操作，如 API 请求和路由跳转
+C: 调用非纯函数，如 Date.now() 或 Math.random()
+D: 更新state
+正确答案：ABC
+12. [多选题] (5分)
+connect接受的参数都有哪些？
+A: [mapStateToProps(state, [ownProps]: stateProps)]（类型：函数）
+B: [mapDispatchToProps(dispatch, [ownProps]): dispatchProps]（类型：对象或函数）
+C: [mergeProps(stateProps, dispatchProps, ownProps): props]（类型：函数）
+D: [options](类型：对象)
+正确答案：ABCD
+13. [判断题] (5分)
+state只关心组件自己内部的状态，props会向下遍历整颗DOM树
+正确答案： 对 
+14. [判断题] (5分)
+<Switch> 下的子节点只能是 <Route> 或 <Redirect> 元素
+正确答案： 对 
+15. [判断题] (5分)
+setState有第二个参数，是callback
+正确答案： 对 
+16. [判断题] (5分)
+setState会造成不必要的渲染
+正确答案： 对 
+17. [填空题(手动判卷)] (5分)
+reducer的功能是_____
+正确答案： 根据当前触发的action对当前应用的状态（state）进行迭代 
+18. [填空题(手动判卷)] (5分)
+在react中定义一个受控的并 可对其value进行更改 的 多行输入框 ______
+正确答案： <textarea value={textareaValue} onChange={this.handleTextareaChange}/> 
+19. [填空题(手动判卷)] (5分)
+react所有组件都继承自顶层类_____
+正确答案： React.Component 
+20. [填空题(手动判卷)] (5分)
+redux中通过______派发事件
+正确答案： dispatch 

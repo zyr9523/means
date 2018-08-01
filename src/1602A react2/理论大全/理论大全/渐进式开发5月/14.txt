@@ -1,0 +1,146 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0100-  
+渐进式开发14
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[6]多选题[3]判断题[3]填空题(手动判卷)[8]
+试卷总分：100
+1.[单选题](5分)
+对于受控组件说法正确的是？
+A: 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+B: 一个受控的组件自己维护自己的state
+C: 没有value属性
+D: 没办法更改value
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+在哪个生命周期发出 AJAX 请求最合适?
+A: componentDidMount
+B: componentWillMount
+C: shouldComponentUpdate
+D: constructor
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+不是Redux三大原则的选项是？
+A: 单一数据源
+B: 惟一改变 state 的方法就是触发 setState
+C: State 是只读的
+D: 使用纯函数来执行修改
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+使用什么定义常量     知识点：优化 来源：大纲
+A: var
+B: const
+C: let
+D: window
+正确答案： B 
+试题解析：
+我的答案： B 
+5.[单选题](5分)
+在子组件中读取props的值应该    知识点：路由 通信来源：大纲
+A: this.props
+B: this.prop
+C: props
+D: prop
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+在redux中reducer的执行需要 ：知识点：路由 来源：大纲
+A: dispatch()
+B: store.dispatch({ type })
+C: dispatch({ type })
+D: dispatch(type)
+正确答案： B 
+试题解析：
+我的答案： B 
+7. [多选题] (5分)
+React中调用setState之后发生了什么事情?
+A: React会将当前传入的参数对象与组件当前的状态合并
+B: React会以相对高效的方式根据新的状态构建React元素树并且重新渲染整个UI界面
+C: React得到的元素树之后,React会自动计算出新的树与老的树的节点的差异
+D: 然后根据差异对界面进行最小化的渲染
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+8. [多选题] (5分)
+shouldComponentUpdate 返回值不是什么？
+A: number
+B: 布尔值
+C: string
+D: array
+正确答案：ACD
+试题解析：
+我的答案： ACD 
+9. [多选题] (5分)
+下面那些组件属于react-router-dom 的 知识点:事件 来源：大纲
+A: BrowserRouter
+B: Link
+C: Redirect
+D: Router
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+10. [判断题] (5分)
+refs不允许您直接访问DOM元素或组件实例
+正确答案： 错 
+试题解析：
+我的答案： 错 
+11. [判断题] (5分)
+组件是将props转化成UI，然而高阶组件将一个组价转化成另外一个组件
+正确答案： 对 
+试题解析：
+我的答案： 对 
+12. [判断题] (5分)
+react中使用虚拟dom算法提高了ui渲染速度 知识点：优化 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+13. [填空题(手动判卷)] (5分)
+______组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件
+正确答案： 高阶 
+试题解析：
+我的答案： 高阶组件 
+14. [填空题(手动判卷)] (5分)
+reducer本质上是个函数，reducer(previousState,action) => _____
+正确答案： newState 
+试题解析：
+我的答案： newState 
+15. [填空题(手动判卷)] (5分)
+在react中定义一个受控的并 可对其value进行更改 的 多行输入框 ______
+正确答案： <textarea value={textareaValue} onChange={this.handleTextareaChange}/> 
+试题解析：
+我的答案： <textarea value={teatareaValue} onChange={this.handleTextareaChange.bind(this)}></textarea> 
+16. [填空题(手动判卷)] (5分)
+在constructor中如何给一个 this.handleClick 方法 绑定this
+正确答案： this.handleClick=this.handleClick.bind(this) 
+试题解析：
+我的答案： this.handleClick = this.handleClick.bind(this) 
+17. [填空题(手动判卷)] (5分)
+react为了提高ui渲染的效率使用了_________技术。   知识点：优化 来源：大纲
+正确答案： 虚拟dom 
+试题解析：
+我的答案： 虚拟DOM 
+18. [填空题(手动判卷)] (5分)
+react的生命周期分为_____________这几个阶段      知识点：优化 来源：大纲
+正确答案： 实例化 存在期 销毁期 
+试题解析：
+我的答案： 实例期 存在期 销毁期 
+19. [填空题(手动判卷)] (5分)
+虚拟dom主要是在_________生命周期中生成  知识点：优化 来源：大纲
+正确答案： render 
+试题解析：
+我的答案： render 
+20. [填空题(手动判卷)] (5分)
+redux中改变state需要在_________中完成   知识点：redux 来源：大纲
+正确答案： reducer 
+试题解析：
+我的答案： reducer 

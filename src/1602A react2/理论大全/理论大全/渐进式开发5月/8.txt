@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0133-  
+渐进式开发8
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+以下属于react-router-dom方法的有哪些？
+A: BrowserRouter
+B: router-view
+C: router-link
+D: router
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+exact关键字的作用是什么？
+A: 排除当前路由
+B: 做路由的唯一匹配
+C: 是否显示当前路由
+D: 模糊匹配
+正确答案： B 
+试题解析：
+我的答案： B 
+3.[单选题](5分)
+以下属于路由跳转正确的方式有？
+A: <router-link to=“/path” />
+B: <link to=“/path” />
+C: ui-sref=“/path”
+D: <router-link to={“/path”} />
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+<Route>组件如何匹配到路由之后渲染某个组件
+A: Component属性
+B: path属性
+C: link属性
+D: src属性
+正确答案： A 
+试题解析：
+我的答案： A 
+5.[单选题](5分)
+<Route>组件render属性的作用是什么？
+A: 渲染一个优先级比component高的组件
+B: 渲染一个优先级比component低的组件
+C: 可以对组件做一些自定义操作
+D: 组件中可以没有render方法
+正确答案： C 
+试题解析：
+我的答案： C 
+6.[单选题](5分)
+什么情况会触发componentWillReceiveProps生命周期
+A: 组件接收到新的props时
+B: 组件接收到新的state时
+C: 组件重新渲染时
+D: 当前组件修改props的时候
+正确答案： A 
+试题解析：
+我的答案： A 
+7.[单选题](5分)
+在react中对于findDOMNode说法正确的
+A: 当参数是DOM，返回值就是该DOM
+B: 当参数是Component获取的是该Component？
+C: 当参数是Component获取的是该父级组件？
+D: null
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](5分)
+在class创建的组件上定义props类型使用   知识点：组件状态 来源：大纲
+A: static defaultProps = {}
+B: static propTypes = {}
+C: state
+D: data
+正确答案： B 
+试题解析：
+我的答案： B 
+9.[单选题](5分)
+在react指定只传递一个子代   知识点：组件状态 来源：大纲
+A: PropTypes.element.isRequired
+B: PropTypes.any.isRequired
+C: PropTypes.func.isRequired
+D: PropTypes.element
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+要检查组件的属性，你需要配置特殊的：知识点：组件状态 来源：大纲
+A: propTypes
+B: props
+C: data
+D: scope
+正确答案： A 
+试题解析：
+我的答案： A 
+11. [多选题] (5分)
+以下属于react-router-dom的组件有哪些？
+A: Redirect
+B: Link
+C: Switch
+D: HashRouter
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+12. [多选题] (5分)
+JSX中DOM元素的属性是标准规范属性，但例外的是？
+A: class属性改为className
+B: for属性改为htmlFor
+C: style属性改为styleName
+D: data属性改为htmlData
+正确答案：AB
+试题解析：
+我的答案： AB 
+13. [多选题] (5分)
+以下描述react.createClass的特性正确的是？
+A: React.createClass会自绑定函数方法
+B: 属于es5书写形式
+C: 和无状态组件差异不大
+D: 用于创建组件
+正确答案：ABD
+试题解析：
+我的答案： ABD 
+14. [多选题] (5分)
+ref的值如果是函数的，在组件销毁的时候执行时，不会传递下面那些东西    知识点：组件状态 来源：大纲
+A: element
+B: node
+C: null
+D: event对象
+正确答案：ACD
+试题解析：
+我的答案： ACD 
+15. [多选题] (5分)
+props的值可以是哪些  知识点:props 来源：大纲
+A: dom元素
+B: 组件元素
+C: 字符串
+D: js表达式
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+16. [判断题] (5分)
+Router组件中component和render的区别不大
+正确答案： 错 
+试题解析：
+我的答案： 错 
+17. [判断题] (5分)
+react路由里面只有一种BrowserRouter模式
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+exact关键字可以做严格匹配路由
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [判断题] (5分)
+static propTypes = { optionalString: string, }是正确的   知识点：props 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+20. [判断题] (5分)
+react中可以指定props的值是react元素   知识点：组件状态 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 

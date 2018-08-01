@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0066-  
+渐进式开发3
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+componentWillUnmount这个生命周期在react中的作用是什么？
+A: 接收到新的props或者state后
+B: 组件被移除之前被调用，可以用于做一些清理工作
+C: 完成渲染新的props或者state后调用
+D: 组件是否应当渲染新的props或state
+正确答案： B 
+试题解析：
+我的答案： B 
+2.[单选题](5分)
+什么情况下会触发componentWillReceiveProps这个生命周期
+A: 组件接收到新的props时
+B: 组件接收到新的state时
+C: 组件重新渲染时
+D: 当前组件修改props的时候
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+以下哪些生命周期只调用一次？
+A: getDefaultProps
+B: componentWillReceiveProps
+C: render
+D: shouldComponentUpdate
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](5分)
+下面那个方法能使组件调用自身的render()方法重新渲染组件
+A: forceUpdate
+B: update
+C: beforeupdate
+D: afterupdate
+正确答案： A 
+试题解析：
+我的答案： A 
+5.[单选题](5分)
+以下属于实例期的有哪些？
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: componentWillMount
+D: componentWillUnmount
+正确答案： C 
+试题解析：
+我的答案： C 
+6.[单选题](5分)
+以下描述错误的是？
+A: componentWillReceiveProps属于存在期
+B: shouldComponentUpdate属于存在期
+C: componentWillUnmount属于存在期
+D: componentDidUpdate组件更新结束之后执行，在初始化render时不执行
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+下面方法中那个方法是需要创建并返回一个虚拟dom,  知识点：生命周期 来源：大纲
+A: componentDidMount
+B: componentWillMount
+C: render
+D: shouldComponentUpdate
+正确答案： C 
+试题解析：
+我的答案： C 
+8.[单选题](5分)
+在react修改数据使用,  ,  知识点：生命周期 来源：大纲
+A: setState
+B: state
+C: this.state
+D: props
+正确答案： A 
+试题解析：
+我的答案： A 
+9.[单选题](5分)
+组件的 props 或者 state 的改变不需要重新渲染可以使用那个方法控制,  ,  知识点：生命周期 来源：大纲
+A: componentWillReceiveProps
+B: componentWillUpdate
+C: shouldComponentUpdate
+D: render
+正确答案： C 
+试题解析：
+我的答案： C 
+10.[单选题](5分)
+componentWillUnmount主要的任务是,  来源：大纲
+A: 创建事件监听器
+B: 实例化state
+C: 改变state
+D: 清理和销毁
+正确答案： D 
+试题解析：
+我的答案： D 
+11. [多选题] (5分)
+以下属于react存在期的生命周期有哪些？
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: componentWillUpdate
+D: componentWillMount
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+12. [多选题] (5分)
+componentWillReceiveProps描述正确的是？
+A: 组件接收到新的props时调用
+B: 并将其作为参数nextProps使用
+C: 此时可以更改组件props及state
+D: 组件接收新的state
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+13. [多选题] (5分)
+react存在期包含那些方法,  知识点：生命周期 来源：大纲
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: componentWillUpdate
+D: componentDidUpdate
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+14. [多选题] (5分)
+下面那些生命周期执行一次,  知识点：生命周期 来源：大纲
+A: componentDidMount
+B: render
+C: getDefaultProps
+D: componentWillReceiveProps
+正确答案：AB
+试题解析：
+我的答案： AB 
+15. [多选题] (5分)
+在state修改后那个生命周期不会执行,  知识点：生命周期 来源：大纲
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: render
+D: getInitialState
+正确答案：AD
+试题解析：
+我的答案： AD 
+16. [判断题] (5分)
+render函数是必写的函数否则组件无法正常显示
+正确答案： 对 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+初始化每个实例的state只能使用getInitialState
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+react设置默认的props只能使用getDefaultProps
+正确答案： 错 
+试题解析：
+我的答案： 错 
+19. [判断题] (5分)
+componentWillReceiveProps可以修改props或者state
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+当组件的state改变先执行shouldComponentUpdate在执行render,  知识点：生命周期 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 

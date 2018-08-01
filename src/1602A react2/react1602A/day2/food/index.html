@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        class Nav extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    nav:['美食','排序','筛选']
+                }
+            }
+            render(){
+                let {nav} = this.state;
+                return (
+                    <div className="head">
+                        <div className="top">
+                            美食
+                        </div>
+                        <div className="tab">
+                            {
+                                nav.map((item,index)=>{
+                                    return <span key={index}>{item}<i></i></span>
+                                })
+                            }
+                        </div>
+                    </div>
+                )
+            }
+        }
+        class Image extends React.Component{
+            render(){
+                let {image_path} = this.props.image_path;
+                image_path = image_path.replace(/.*(png|jpeg)$/,($1,$2)=>{
+                    // console.log($1,$2);
+                    return $1+'.'+$2
+                }) 
+                return (
+                    <img src={`http://fuss10.elemecdn.com/${image_path}`}/>
+                )
+            }
+        }
+        class Start extends React.Component{
+            render(){
+                let {rating} = this.props;
+                return (
+                    <div className="start">
+                        <div className="ylstart"></div>
+                        <div className="gsstart" style={{width:rating/5*100+'%'}}>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="/>
+                        </div>
+                    </div>
+                )
+            }
+        }
+        class MoreDetail extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    toggle:0
+                }
+            }
+            render(){
+                let {activities,count} = this.props;
+                let list = activities.slice(2);
+                return (
+                    <div className="moreList">
+                       {
+                        list.map((item,index)=>{
+                            return  <p key={item.id}>
+                                        <span>{item.icon_name}</span>
+                                        <span>{item.tips}</span>
+                                    </p>
+                        })
+                       }
+                    </div>
+                )
+            }
+        }
+        class List extends React.Component{
+            constructor(){
+                super(); 
+                this.state = {
+                    isShow:false,
+                    count:0
+                }
+            }
+            render(){
+                let {data} = this.props;
+                let {isShow,count} = this.state;
+                let {rating,delivery_mode,activities,index} = data;
+                return (
+                    <li>
+                        <div className="img">
+                            <Image image_path={data}/>
+                        </div>
+                        <div className="tit">
+                            <h3>{data.name}{
+                                data.supports.map((val,ind)=>{
+                                    return <span key={ind}>{val.icon_name}</span>
+                                })
+                            }</h3>
+                            <div className="compute">
+                                <div>
+                                    <Start rating={rating}/>
+                                    <span>{rating}</span>
+                                    <span> 月售{data.distance}单</span>
+                                </div>
+                                <span>{delivery_mode&&delivery_mode.text}</span>
+                            </div>
+                            <div className="last">
+                                <p>
+                                    <span>￥{data.float_minimum_order_amount}起送 /</span> 
+                                    {data.piecewise_agent_fee.description}
+                                </p>
+                                <p>
+                                    <span>{data.distance/1000} km  / </span>
+                                    <span> {data.order_lead_time}分钟</span>
+                                </p>
+                            </div>
+                            <div className="more">
+                                <div>
+                                    <p><span>{activities[0].icon_name}</span><span>{activities[0].tips}</span></p>
+                                    <p onClick={this.toggle.bind(this,index)} ><span>{activities.length}个活动</span><i className={isShow&&count===index?'rotate':''}></i></p>
+                                </div>
+                                <p>
+                                    <span>{activities[1].icon_name}</span>
+                                    <span>{activities[1].tips}</span>
+                                </p>
+                                {
+                                    isShow?<MoreDetail activities={activities} count={count}/>:null
+                                }
+                            </div>  
+                        </div>
+                    </li> 
+                )
+            }
+            toggle(index){
+                this.setState({
+                    isShow:!this.state.isShow,
+                    count:index
+                });   
+            }
+        }
+        class Parent extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    list:[]
+                }
+            }
+            render(){
+                let {list} = this.state;
+                return (
+                    <div className="wrap">
+                        <Nav/>
+                        <div className="section">
+                            <div className="scroll">
+                                <div className="content">
+                                    {
+                                        list.map((item,index)=>{
+                                            return <List data={item.restaurant} index={index} key={item.restaurant.id}/>
+                                        })
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+            componentDidMount(){
+                fetch('https://www.easy-mock.com/mock/5af661927138d57c901e9172/example/eleme').then(res=>{
+                    res.json().then(body=>{
+                        console.log(body.data.items)
+                        this.setState({
+                            list:body.data.items
+                        })
+                    })
+                })
+            }
+        }
+        
+        
+        ReactDOM.render(<Parent/>,document.querySelector('#root'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0111-  
+渐进式开发14
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+对于受控组件说法正确的是？
+A: 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+B: 一个受控的组件自己维护自己的state
+C: 没有value属性
+D: 没办法更改value
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+在 React 当中 Element 和 Component 描述错误的是？
+A: 一个 React element 是一些 UI 的对象表示
+B: 一个 React Component 是一个函数或一个类
+C: React Component返回 React element
+D: react中 Component和Element没区别
+正确答案： D 
+试题解析：
+我的答案： D 
+3.[单选题](5分)
+在哪个生命周期发出 AJAX 请求最合适?
+A: componentDidMount
+B: componentWillMount
+C: shouldComponentUpdate
+D: constructor
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](5分)
+使用以下哪个组件可以实现对当前所有子路由的遍历，并且对第一个匹配到路径的路由进行渲染
+A: router
+B: Link
+C: Switch
+D: exact
+正确答案： C 
+试题解析：
+我的答案： C 
+5.[单选题](5分)
+不是Redux三大原则的选项是？
+A: 单一数据源
+B: 惟一改变 state 的方法就是触发 setState
+C: State 是只读的
+D: 使用纯函数来执行修改
+正确答案： B 
+试题解析：
+我的答案： B 
+6.[单选题](5分)
+下面那个框架是facebook开发的   知识点：优化  来源：大纲
+A: vue
+B: angular
+C: react
+D: jquery
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+使用什么定义常量     知识点：优化 来源：大纲
+A: var
+B: const
+C: let
+D: window
+正确答案： B 
+试题解析：
+我的答案： B 
+8.[单选题](5分)
+react中一个react元素上定义了ref可以refs获取到什么  知识点：ref   来源：大纲
+A: dom元素
+B: react元素
+C: 组件实例
+D: 组件对应的dom
+正确答案： C 
+试题解析：
+我的答案： C 
+9.[单选题](5分)
+在子组件中读取props的值应该    知识点：路由 通信来源：大纲
+A: this.props
+B: this.prop
+C: props
+D: prop
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+在redux中reducer的执行需要 ：知识点：路由 来源：大纲
+A: dispatch()
+B: store.dispatch({ type })
+C: dispatch({ type })
+D: dispatch(type)
+正确答案： B 
+试题解析：
+我的答案： B 
+11. [多选题] (5分)
+React中调用setState之后发生了什么事情?
+A: React会将当前传入的参数对象与组件当前的状态合并
+B: React会以相对高效的方式根据新的状态构建React元素树并且重新渲染整个UI界面
+C: React得到的元素树之后,React会自动计算出新的树与老的树的节点的差异
+D: 然后根据差异对界面进行最小化的渲染
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+12. [多选题] (5分)
+关于keys描述正确的是？
+A: 键(Keys) 帮助 React 标识哪个项被修改、添加或者移除了。
+B: 数组中的每一个元素都应该有一个唯一不变的键(Keys)来标识
+C: keys 在同辈元素中必须是唯一的
+D: keys对提高性能没作用
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+13. [多选题] (5分)
+shouldComponentUpdate 返回值不是什么？
+A: number
+B: 布尔值
+C: string
+D: array
+正确答案：ACD
+试题解析：
+我的答案： ACD 
+14. [多选题] (5分)
+以下对于高阶组件的描述正确的是？
+A: 高阶组件会给被包裹组件传递所有的属性(props)
+B: 不要在render函数中使用高阶组件
+C: 高阶组件是一个函数，能够接受一个组件并返回一个新的组件
+D: 不要改变原始组件，使用组合
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+15. [多选题] (5分)
+下面那些生命周期是属于存在期   知识点：优化  来源：大纲
+A: shouldComponentUpdate
+B: componentWillMount
+C: componentWillUnmount
+D: componentWillReceiveProps
+正确答案：ABD
+试题解析：
+我的答案： ABD 
+16. [判断题] (5分)
+refs不允许您直接访问DOM元素或组件实例
+正确答案： 错 
+试题解析：
+我的答案： 错 
+17. [判断题] (5分)
+高阶组件会修改输入组件
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+组件是将props转化成UI，然而高阶组件将一个组价转化成另外一个组件
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [判断题] (5分)
+react中使用虚拟dom算法提高了ui渲染速度 知识点：优化 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+react晚于vue问世  知识点：优化：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 

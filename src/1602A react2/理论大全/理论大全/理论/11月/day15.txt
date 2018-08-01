@@ -1,0 +1,74 @@
+﻿一、填空（人工判卷）	
+    1.____是构成 React 应用的最小单位						答：元素	
+    2.自定义组件将属性作为单个对象传递给该组件，这个对象 称之为____			答：props	
+    3.	"function sum(a, b) {
+        return a + b;
+    }   这样的函数 称为 什么函数？"			答：纯	
+    4.react Component在_____中初始化状态 state		答：constructor	
+二、单选
+	1、对于受控组件说法正确的是？	正确答案:A	
+        A:你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变	
+        B:一个受控的组件自己维护自己的state	
+        C:没有value属性	
+        D:没办法更改value			
+	2、调用 setState() 时，React 会不会将你提供的对象合并到当前状态?	正确答案:A	
+        A:会	
+        B:不会	
+        C:有时候会	
+        D:有时候不会			
+	3、什么通常被称为局部或封装。 除了拥有并设置它的组件外，其它组件不可访问？正确答案:A	
+        A:state	
+        B:props	
+        C:value	
+        D:defaultValue		
+	4、React事件绑定属性的命名采用什么方式?	正确答案：	C	
+        A:纯小写	
+        B:纯大写	
+        C:驼峰规则	
+        D:烤肉串模式		
+	5、react定义组件有几种方式	正确答案：	C	
+        A:1	
+        B:2	
+        C:3	
+        D:4		
+	6、react无状态组件是指什么？	正确答案：B	
+        A:不能接收props	
+        B:创建纯展示组件，这种组件只负责根据传入的props来展示，不涉及state操作	
+        C:有state状态	
+        D:不能使用jsx语法 			
+	7、修饰器（Decorator）函数描述正确的是？	正确答案：A	
+        A:用来修改类的行为	
+        B:不能修改类的行为	
+        C:用来修改函数	
+        D:用来修改函数的行为			
+	8、不是Redux三大原则的选项是？	正确答案:B	
+        A:单一数据源	
+        B:惟一改变 state 的方法就是触发 setState	
+        C:State 是只读的	
+        D:使用纯函数来执行修改	
+三、多选		
+	1、react中更新UI的方式都有哪些？	正确答案:ABC	
+        A:ReactDOM.render()	
+        B:this.setState()	
+        C:使用redux更改数据	
+        D:click			
+	2、关于keys描述正确的是？	正确答案：ABC	
+        A:键(Keys) 帮助 React 标识哪个项被修改、添加或者移除了。	
+        B:数组中的每一个元素都应该有一个唯一不变的键(Keys)来标识	
+        C:keys 在同辈元素中必须是唯一的	
+	D:keys对提高性能没作用		
+	3、在react中给事件绑定this的方法正确的是？	正确答案：ABD	
+        A:<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>	
+        B:在constructor构造函数中使用 this.deleteRow=this.deleteRow.bind(this)	
+        C:<button onClick={this.deleteRow}>Delete Row</button>	
+        D:<button onClick={(e) => this.deleteRow(e)}>Delete Row</button>		
+	4、react元素可以是以下什么？	正确答案：ABD	
+        A:dom标签	
+        B:自定义组件	
+        C:class	
+        D:div			
+四、判断
+	1、react中的事件都需要addEventListener监听 ？正确答案：X
+	2、无论是使用函数或是类来声明一个组件，它决不能修改它自己的props		正确答案：V
+	3、组件的返回值只能有一个根元素					正确答案：V
+	4、react有更新时一定会更新整个dom树					正确答案：X

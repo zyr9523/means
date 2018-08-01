@@ -1,0 +1,106 @@
+@charset "UTF-8";
+.history {
+  flex: 1;
+  background: #f6514b;
+  overflow: hidden;
+  position: relative;
+}
+
+.history img {
+  width: 100%;
+  height: 100%;
+}
+
+.history a {
+  width: 130px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  top: 360px;
+}
+
+.history ul {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -132px;
+  top: 120px;
+  display: flex;
+}
+
+.history ul li {
+  width: 35%;
+}
+
+.history ul li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.history ul li span {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #666;
+  margin: 0 auto;
+  margin-top: 35px;
+  position: relative;
+}
+
+.history ul li span.active:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 6px;
+  border: 1px solid transparent;
+  border-left-color: #666;
+  border-bottom-color: #666;
+  transform: rotate(-45deg);
+}
+
+.history ul li:first-child span:before {
+  content: '无';
+  position: absolute;
+  left: 30px;
+  font-size: 16px;
+}
+
+.history ul li:last-child span:before {
+  content: '有';
+  position: absolute;
+  left: 30px;
+  font-size: 16px;
+}
+
+.history ul li:last-child div {
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.history ul li:last-child div i {
+  width: 70px;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 4px 0;
+  margin: 5px;
+}
+
+.history ul li:last-child div i.on {
+  background: #f6514b;
+  color: #fff;
+}

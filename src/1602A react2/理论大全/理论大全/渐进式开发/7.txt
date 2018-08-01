@@ -1,0 +1,178 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0103-  
+渐进式开发7
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[12]多选题[5]判断题[3]
+试卷总分：100
+1.[单选题](5分)
+以下对proptypes验证描述正确的是？
+A: 可以检测任意类型
+B: 如果父组件没有传递props，proptypes检测会发生在defaultprops之后
+C: 如果父组件没有传递props，proptypes检测会发生在defaultprops之前
+D: 不可以定义默认值
+正确答案： B 
+试题解析：
+我的答案： B 
+2.[单选题](5分)
+proptypes检测是否为一个元素使用什么方法？
+A: PropTypes.element
+B: PropTypes.text
+C: PropTypes.nodes
+D: PropTypes.el
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+组件的默认props如何设置
+A: defaultprops
+B: initprops
+C: initialprops
+D: constructor
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](5分)
+虚拟元素可以理解为真实元素的对应，它的构建与更新是在哪里完成的？
+A: 内存中
+B: 硬盘中
+C: 后台服务器
+D: nodejs
+正确答案： A 
+试题解析：
+我的答案： A 
+5.[单选题](5分)
+react中创建的虚拟元素可以分为几类？
+A: 2
+B: 1
+C: 3
+D: 4
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+用javascript没描述html嵌套组合元素时，可以简单地被表示成什么？
+A: json对象
+B: 字符串
+C: symbol对象
+D: 数组
+正确答案： A 
+试题解析：
+我的答案： A 
+7.[单选题](5分)
+如何渲染使用javascript对象表示html层层嵌套的元素?
+A: 使用递归渲染
+B: 使用阶乘渲染
+C: 使用拼接字符串
+D: 使用diff算法渲染
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](5分)
+以下生命周期描述错误的是？
+A: componentWillReceiveProps属于存在期
+B: shouldComponentUpdate属于存在期
+C: componentWillUnmount属于存在期
+D: componentDidUpdate组件更新结束之后执行，在初始化render时不执行
+正确答案： C 
+试题解析：
+我的答案： C 
+9.[单选题](5分)
+在react中ref值是字符串，并且作用在组件上，那么通过refs获取返回的是   知识点：dom操作 来源：大纲
+A: 组件实例
+B: 组件对应的dom
+C: 组件元素
+D: document
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+在react中单项数据流是指   知识点：组件状态 来源：大纲
+A: props数据传递
+B: state内部状态
+C: 组件生命周期
+D: 组件式开发流程
+正确答案： A 
+试题解析：
+我的答案： A 
+11.[单选题](5分)
+父子组件通信属于 知识点：组件通信 来源：大纲
+A: 子组件使用父组件的属性
+B: 父组件使用子组件的属性
+C: 组件的实例传递
+D: 以上都不对
+正确答案： A 
+试题解析：
+我的答案： A 
+12.[单选题](5分)
+react中组件组合使用props中那个属性获取：知识点：组件状态 来源：大纲
+A: child
+B: node
+C: children
+D: childrens
+正确答案： C 
+试题解析：
+我的答案： C 
+13. [多选题] (5分)
+以下属于proptypes能检测的类型有？
+A: array
+B: bool
+C: func
+D: string
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+14. [多选题] (5分)
+react中创建的虚拟元素可以分为哪几类？
+A: dom元素（DOM element）
+B: 组件元素（component element）
+C: 模块(module element)
+D: 对象(Object element)
+正确答案：AB
+试题解析：
+我的答案： AB 
+15. [多选题] (5分)
+在一个组件的子元素中使用注释，说法不正确的是？
+A: 注释要用{}包起来
+B: 在{}中使用//注释
+C: 在{}中使用/**/注释
+D: 在{}中使用<!==>注释
+正确答案：BD
+试题解析：
+我的答案： BD 
+16. [多选题] (5分)
+shouldComponentUpdate生命周期描述正确的是？
+A: 组件是否应当渲染新的props或state
+B: 返回false表示跳过后续的生命周期方法
+C: 在首次渲染期间或者调用了forceUpdate方法后，该方法不会被调用
+D: 可以不用指定返回值
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+17. [多选题] (5分)
+下面那些事件属于react的合成事件  知识点：事件 来源：大纲
+A: onScroll
+B: onClick
+C: onTap
+D: onclick
+正确答案：AB
+试题解析：
+我的答案： AB 
+18. [判断题] (5分)
+defaultProps比proptypes执行的慢
+正确答案： 错 
+试题解析：
+我的答案： 错 
+19. [判断题] (5分)
+proptypes只可以验证类型，不能检测是否有值
+正确答案： 错 
+试题解析：
+我的答案： 错 
+20. [判断题] (5分)
+react中state值的改变有2种方法      知识点：组件状态 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 

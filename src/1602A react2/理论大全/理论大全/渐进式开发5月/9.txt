@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0064-  
+渐进式开发9
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+使用es6 class类定义组件的时候 constructor函数中必须要写什么？
+A: super()
+B: this.state
+C: this.props
+D: this.defaultProps
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+使用以下哪个组件可以实现对当前所有子路由的遍历，并且对第一个匹配到的路径路由进行渲染
+A: router
+B: Link
+C: Switch
+D: exact
+正确答案： C 
+试题解析：
+我的答案： C 
+3.[单选题](5分)
+componentWillUnmount生命周期的作用是？ 
+A: 接收到新的props或者state后
+B: 组件被移除之前被调用，可以用于做一些清理工作
+C: 完成渲染新的props或者state后调用
+D: 组件是否应当渲染新的props或state
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+会触发componentWillReceiveProps这个生命周期的情况是？
+A: 组件接收到新的props时
+B: 组件接收到新的state时
+C: 组件重新渲染时
+D: 当前组件修改props的时候
+正确答案： A 
+试题解析：
+我的答案： A 
+5.[单选题](5分)
+只调用一次的生命周期是？
+A: getDefaultProps
+B: componentWillReceiveProps
+C: render
+D: shouldComponentUpdate
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+在react中属于实例期的生命周期都有哪些？
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: componentWillMount
+D: componentWillUnmount
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+在react中如何将input输入的值和state状态绑定到一起   知识点：dom操作 来源：大纲
+A: v-model
+B: ng-model
+C: 受控组件
+D: r-model
+正确答案： C 
+试题解析：
+我的答案： C 
+8.[单选题](5分)
+在react合成事件中的事件名称的定义规则是   知识点：组件状态 来源：大纲
+A: 首字母大写
+B: 使用驼峰命名
+C: 使用html原生事件名称
+D: 数字＋字母组合
+正确答案： B 
+试题解析：
+我的答案： B 
+9.[单选题](5分)
+在react中textarea使用什么控制内容  知识点：组件状态 来源：大纲
+A: text
+B: html
+C: value
+D: innerText
+正确答案： C 
+试题解析：
+我的答案： C 
+10.[单选题](5分)
+ref的是函数的，那这个函数如何触发：知识点：组件状态 来源：大纲
+A: 自动触发
+B: 在componentWillMount中触发
+C: render中触发
+D: constructor中触发
+正确答案： A 
+试题解析：
+我的答案： A 
+11. [多选题] (5分)
+以下哪些属于react-router-dom中的组件
+A: Switch
+B: Route
+C: Link
+D: router
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+12. [多选题] (5分)
+Redirect中有哪些属性
+A: to
+B: push
+C: from
+D: next
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+13. [多选题] (5分)
+history 对象有哪些属性和方法？ 
+A: location
+B: replace
+C: go
+D: push
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+14. [多选题] (5分)
+Route 组件可以接收以下哪些props？ 
+A: component
+B: render
+C: src
+D: href
+正确答案：AB
+试题解析：
+我的答案： AB 
+15. [多选题] (5分)
+react中针对于表单的处理有  知识点：组件状态 来源：大纲
+A: 受控组件
+B: 非受控组件
+C: model
+D: scope
+正确答案：AB
+试题解析：
+我的答案： AB 
+16. [判断题] (5分)
+Router组件可以使用嵌套的写法
+正确答案： 错 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+exact关键字的作用是做路径的唯一匹配 
+正确答案： 对 
+试题解析：
+我的答案： 对 
+18. [判断题] (5分)
+react 中textarea的值是通过text绑定的state值的同步       知识点：组件状态 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+19. [判断题] (5分)
+react中select中通过selected设置select默认值绑定到state中   知识点：props 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+react中可以通过onchange事件绑定input的输入同步       知识点：组件状态 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 

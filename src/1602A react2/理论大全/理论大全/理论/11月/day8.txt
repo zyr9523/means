@@ -1,0 +1,139 @@
+填空
+1.match._____Parmas _可以获取path中包含的一些额外数据
+
+2.match._____path__可以获取Route组件path属性的值
+
+3.import { ____BrowserRouter as Router
+____ } from 'react-router-dom'补全代码实现导出BrowserRouter方法并且进行重命名
+
+4.实现路由重定向需要用到什么组件_____Redirect
+___
+
+5.以下属于react-router-dom方法的有哪些？A
+
+A BrowserRouter
+B router-view
+C router-link
+D router
+
+6.exact关键字的作用是什么？B
+
+A 排除当前路由
+
+B排除当前路由
+
+C做路由的唯一匹配
+
+D是否显示当前路由
+
+7.以下属于路由跳转正确的方式有？B
+A<router-link to=“/path” />
+
+B<link to=“/path” />
+
+C ui-sref=“/path”
+
+D
+
+8.<Route>组件如何匹配到路由之后渲染某个组件 A
+A Component属性
+
+B path属性
+
+C link属性
+
+D src属性
+
+9.<Route>组件render属性的作用是什么？C
+A 渲染一个优先级比component高的组件
+
+B 渲染一个优先级比component低的组件
+
+C 可以对组件做一些自定义操作
+
+D
+10.想获取当前匹配的路由的一些信息如何获取 A
+A match对象
+
+B router对象
+
+C route对象
+
+D $router
+
+11.什么情况下会触发componentWillReceiveProps这个生命周期 A
+A组件接收到新的props时
+
+B组件接收到新的state时
+
+C组件重新渲染时
+
+D当前组件修改props的时候
+
+12.以下对于findDOMNode说法正确的 A
+A当参数是DOM，返回值就是该DOM
+
+B当参数是Component获取的是该Component?
+
+C当参数是Component获取的是该父级组件?
+
+Dnull
+
+多选
+13.以下属于react-router-dom的组件有哪些？ABCD
+A Redirect
+
+B Link 
+
+C Switch
+
+D HashRouter
+
+14.以下属于Router组件渲染显示组件的有哪些？AB
+A component
+
+B render
+
+C src
+
+D link
+
+15.对于shouldComponentUpdate描述正确的是？ABC
+A 组件是否应当渲染新的props或state
+
+B 返回false表示跳过后续的生命周期方法
+
+C "在首次渲染期间或者调用了forceUpdate方法后，该方法不会被调用
+"
+
+D 可以不用指定返回值
+
+16.react.createClass的特性？ AB
+A React.createClass会自绑定函数方法
+
+B 属于es5书写形式
+
+C 和无状态组件差异不大
+
+D 
+
+17.react.component的特性？AB
+A 是以ES6的形式来创建react的组件的
+
+B 创建的组件，其成员函数不会自动绑定this
+
+C 和无状态组件差异不大
+
+D
+
+18.Router组件中component和render的区别不大 F
+
+19.react路由里面只有一种BrowserRouter模式 F
+ 
+20.exact关键字可以做严格匹配路由 T
+
+
+
+
+
+ 

@@ -1,0 +1,330 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0017-  
+渐进式开发周2
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[40]单选题[20]多选题[10]判断题[10]
+试卷总分：100
+1.[单选题](3分)
+以下对redux描述正确的选项是那个？
+A: 管理应用复杂的状态
+B: 只可以在react中使用
+C: 可以在vue中使用
+D: 是一个ui框架
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](3分)
+在redux中谁负责更新应用的state？
+A: action
+B: reducer
+C: muations
+D: actiontype
+正确答案： B 
+试题解析：
+我的答案： B 
+3.[单选题](3分)
+在编写reducer函数时，需要接受哪些必要参数？
+A: state和action
+B: store和action
+C: dispatch和action
+D: actiontype和action
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](3分)
+在reducer函数中更新state的时候为了不修改state，可以使用以下哪些方法？
+A: =
+B: +
+C: Object.assign()
+D: Array.from
+正确答案： C 
+试题解析：
+我的答案： C 
+5.[单选题](3分)
+以下属于Redirect组件属性的有？
+A: title
+B: href
+C: src
+D: to
+正确答案： D 
+试题解析：
+我的答案： D 
+6.[单选题](3分)
+以下对proptypes验证描述正确的是？
+A: 可以检测任意类型
+B: 如果父组件没有传递props，proptypes检测会发生在defaultprops之后
+C: 如果父组件没有传递props，proptypes检测会发生在defaultprops之前
+D: 只可以检测五种类型
+正确答案： B 
+试题解析：
+我的答案： B 
+7.[单选题](3分)
+proptypes检测是否为一个元素使用什么方法？
+A: PropTypes.element
+B: PropTypes.text
+C: PropTypes.nodes
+D: PropTypes.el
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](3分)
+如何设置组件的默认props
+A: initprops
+B: initialprops
+C: defaultprops
+D: staticprops
+正确答案： C 
+试题解析：
+我的答案： C 
+9.[单选题](3分)
+exact关键字的作用是什么？
+A: 排除当前路由
+B: 做路由的唯一匹配
+C: 是否显示当前路由
+D: 不允许路由跳转
+正确答案： B 
+试题解析：
+我的答案： B 
+10.[单选题](3分)
+以下属于路由跳转正确的方式有？
+A: <router-link to=“/path” />
+B: ui-sref=“/path”
+C: <link to=“/path” />
+D: <link src=“/path” />
+正确答案： C 
+试题解析：
+我的答案： C 
+11.[单选题](3分)
+以下选项那个属于做路由唯一匹配的
+A: isExact
+B: hash
+C: exact
+D: link
+正确答案： C 
+试题解析：
+我的答案： C 
+12.[单选题](3分)
+想获取当前匹配的路由的一些信息如何获取
+A: $router
+B: route对象
+C: router对象
+D: match对象
+正确答案： D 
+试题解析：
+我的答案： D 
+13.[单选题](3分)
+什么情况下会触发componentWillReceiveProps这个生命周期
+A: 组件接收到新的state时
+B: 组件重新渲染时
+C: 组件接收到新的props时
+D: 当前组件修改props的时候
+正确答案： C 
+试题解析：
+我的答案： C 
+14.[单选题](3分)
+class    constructor中必须要写的是什么？
+A: this.state
+B: this.props
+C: super()
+D: this.defaultProps
+正确答案： C 
+试题解析：
+我的答案： C 
+15.[单选题](3分)
+使用以下哪个组件可以实现对当前所有子路由的遍历，并且对第一个匹配到的路径路由进行渲染
+A: router
+B: Switch
+C: Link
+D: exact
+正确答案： B 
+试题解析：
+我的答案： B 
+16.[单选题](3分)
+以下属于react的存在期的有哪些？
+A: shouldComponentUpdate
+B: getDefaultProps
+C: getInitialState
+D: componentWillMount
+正确答案： A 
+试题解析：
+我的答案： A 
+17.[单选题](3分)
+下列说法错误的是？
+A: componentWillReceiveProps属于存在期
+B: shouldComponentUpdate属于存在期
+C: componentWillUnmount属于存在期
+D: getDefaultProps属于存在期
+正确答案： C 
+试题解析：
+我的答案： C 
+18.[单选题](3分)
+以下属于es6常用的数组循环的是哪些？
+A: map
+B: for
+C: each
+D: test
+正确答案： A 
+试题解析：
+我的答案： A 
+19.[单选题](3分)
+以下对于findDOMNode说法正确的
+A: 当参数是DOM，返回值就是该DOM
+B: 当参数是Component获取的是该Component
+C: 当参数是Component获取的是该父级组件
+D: null
+正确答案： A 
+试题解析：
+我的答案： A 
+20.[单选题](3分)
+以下对于ref说法正确的
+A: 添加到Compoennt实例上获取到的是dom
+B: 添加到dom上获取到的是component实例
+C: 添加到dom上获取到的是dom
+D: 替换值
+正确答案： C 
+试题解析：
+我的答案： C 
+21. [多选题] (2分)
+以下哪些属于react-redux中的方法？
+A: createStore
+B: applyMiddleware
+C: Provider
+D: Router
+正确答案：AB
+试题解析：
+我的答案： BC 
+22. [多选题] (2分)
+createdStore方法创建的store是一个对象，它包含以下哪些方法？
+A: getState()
+B: dispatch(action)
+C: subscribe(listener)
+D: replaceReducer(nextReducer)
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+23. [多选题] (2分)
+redux中包含哪些内容？
+A: action
+B: reducer
+C: mutations
+D: 组件
+正确答案：AB
+试题解析：
+我的答案： AB 
+24. [多选题] (2分)
+一般action要注意的问题是哪些？
+A: action内必须有一个type字段
+B: 还需要一个参数
+C: action可以返回一个字符串
+D: action可以返回一个数组
+正确答案：AB
+试题解析：
+我的答案： AB 
+25. [多选题] (2分)
+redux的三大原则是哪些？
+A: 单一数据源
+B: State 是只读的
+C: 使用纯函数来执行修改
+D: 数据双向绑定
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+26. [多选题] (2分)
+以下属于reducer禁止操作的事情有哪些？
+A: 修改传入参数
+B: 执行有副作用的操作
+C: 调用非纯函数
+D: 更新state
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+27. [多选题] (2分)
+以下哪些属于路由history对象的方法和属性？
+A: location
+B: replace
+C: go
+D: push
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+28. [多选题] (2分)
+在开发react应用中处理路由时需要用到组件有哪些？
+A: Redirect
+B: Link
+C: Switch
+D: HashRouter
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+29. [多选题] (2分)
+在react路由中Route组件有哪些方式可以渲染组件？
+A: Redirect
+B: component
+C: render
+D: src
+正确答案：BC
+试题解析：
+我的答案： BC 
+30. [多选题] (2分)
+以下不属于match对象获取内容范围的是？
+A: child
+B: children
+C: path
+D: isExact
+正确答案：AB
+试题解析：
+我的答案： AB 
+31. [判断题] (2分)
+做路由唯一匹配的方法是给Route组件加exact关键字
+正确答案： 对 
+试题解析：
+我的答案： 对 
+32. [判断题] (2分)
+match.params可以获取path中包含的额外数据
+正确答案： 对 
+试题解析：
+我的答案： 对 
+33. [判断题] (2分)
+实现路由重定向需要用到direct组件
+正确答案： 错 
+试题解析：
+我的答案： 错 
+34. [判断题] (2分)
+react-router-dom中只有一种路由模式 是 browserrouter
+正确答案： 错 
+试题解析：
+我的答案： 错 
+35. [判断题] (2分)
+js中有个match方法是做正则匹配的
+正确答案： 对 
+试题解析：
+我的答案： 对 
+36. [判断题] (2分)
+defaultProps比proptypes执行的慢
+正确答案： 错 
+试题解析：
+我的答案： 错 
+37. [判断题] (2分)
+从reactv15.5开始react.proptypes已经弃用，建议使用prop-types库
+正确答案： 对 
+试题解析：
+我的答案： 对 
+38. [判断题] (2分)
+proptypes只可以验证类型，不能检测是否有值
+正确答案： 错 
+试题解析：
+我的答案： 错 
+39. [判断题] (2分)
+Router组件中component和render的区别不大
+正确答案： 错 
+试题解析：
+我的答案： 错 
+40. [判断题] (2分)
+react路由里面只有一种BrowserRouter模式
+正确答案： 错 
+试题解析：
+我的答案： 错 

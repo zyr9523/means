@@ -1,0 +1,472 @@
+DAY1
+1.react是___FaceBook_______公司推出的框架
+
+2.html中label元素的for属性在jsx中使用___htmlFor____表示
+
+3.要将React元素渲染到根DOM节点中我们需要使用_____ReactDOM.render()___________________
+
+DAY2
+1.react定义组件有___3 函数定义 class类定义 React.createClass ______种方式
+
+2.定义组件最简单的方式是___函数定义 function Name(){return <div></div>}__________
+
+3.函数组件接收一个__ props _____参数，返回__对象 ______
+
+4.定义一个名字为List的函数组件，调用的时候应该____<List/>或者<List></List> ______________方式去写
+
+5.在自定义组件上写的元素属性，在组件内部称为__ props __________
+
+6.在react中如果需要给组件添加状态，则需要使用____this.state={} ___________来添加
+
+7.在react组件中jsx 写在__ render(){} ____________方法里
+
+8.在react中修改状态使用____this.setState({}) _________________
+
+DAY3
+1.使用class创建组件getDefaultProps替换为____static defaultProps = {}_________________
+
+2.一个React组件的生命周期分为________实例化, 存在期, 销毁期__________________________________部分
+
+3.在使用class定义的组件中state的声明方式为____this.state = {}______________
+
+4.使用createClass定义的组件中state的声明方式为_____getInitalState = {}_______________
+
+5.react的声明周期有_____10_________个
+
+6.每当React使用完一个组件，这个组件必须从 DOM 中卸载后被销毁，此时___componentWillUnmount_______________声明周期会被执行
+
+7.当组件在客户端被实例化，第一次被创建时____getDefaultProps getInitialState componentWillMount render componentDidMount_______________方法依次被调用
+
+8.每次修改 state，都会重新渲染组件，实例化后通过 state 更新组件，会依次调用___shouldComponentUpdate  componentWillUpdate  render  componentDidUpdate____________方法
+
+DAY4
+1.react中ref的值可以是__字符串_______和___回调函数________
+
+2.当组件加载到页面上之后，你可以通过 ___react-dom______ 提供的 ___findDOMNode()______方法拿到组件对应的 DOM 元素
+
+3.this.refs可以获取通过__ref_______属性定义的dom
+
+4.ref可以作用到___dom元素________和___非函数创建的组件元素_________
+
+5.ref   __不能设置在_函数创建的组件元素___________上
+
+6.在组件生命周期中实例化阶段可以在___componentDidMount_________________生命周期方法中获得refs
+
+7.eactDom.render()方法的参数有__3___个，分别是______1:react元素 2:dom节点 3:回调函数____________________________________
+
+8.state的值可以通过__setState()_________改变，并且可以通过____setState的第二个参数（回调函数）_________得知改变完成
+
+周考1
+1.在react中使用html语法编写的结构的方式称为__jsx_________
+
+2.在react中获取组件实例对应的dom使用____findDOMNode()____________
+
+3.在react中获取对应子组件实例使用____refs________
+
+4.在jsx中使用_____{/**注释**/}__________定义注释
+
+5.react中在组件实例化阶段最后一次修改state的机会可以在__componentWillMount_____________生命周期修改
+
+6.____componentWillReceiveProps__________个生命周期可以得知props的改变
+
+7.state的值发生改变_____shouldComponentUpdate_____________生命周期可以阻止组件的重新渲染
+
+8.使用____setState()_______修改state的值
+
+9.react中元素有___dom______元素和____组件______元素
+
+10.react合成事件中通过___e.preventDefault___________阻止事件默认行为
+
+11.在react中添加dom原生事件在___componentDidMount___________生命周期函数中添加
+
+12.在react中父子通信最便捷的是使用__props____________ 
+
+13.在react中使用___context__________是最便捷的跨级通信
+
+14.react合成事件命名规范是__react合成事件命名规范是____________ __________ 
+
+15.父组件更新组件状态通过_props____传递给子组件
+
+16.子组件更新父组件状态需要_需要父组件传递回调函数子组件调用触发_____
+
+17.React.__Component___可以定义组件（常用的）
+
+18.ref={(input) => this.textInput = input}此处的input指的是谁__当前设置ref的元素，当前元素_________
+
+19.reactDom.unmountComponentAtNode（）方法里接收什么参数____指定的容器_______________
+
+DAY5
+1.react中如何绑定点击事件___onClick__________
+
+2.<input type="text" 补全部分={this.getTxt.bind(this)} />将补全部分写为什么可以实现点击键盘获取输入内容___onKeyUp,onKeyDown___________
+
+3.event._____preventDefault()_________可以通知浏览器不要执行与事件关联的默认动作
+
+4.event.__stopPropagation()________可以不再派发事件
+
+5.event._____target_________返回触发此事件的元素（事件的目标节点）
+
+6.event._____type______________返回当前 Event 对象表示的事件的名称
+
+7.<input type="text" onKeyUp={__(event) => this.changeTxt(event)_______} />加入代码实现获取event对象
+
+8._onKeyUp,onKeyDown________哪些是react的键盘事件
+
+9.react中表单事件有哪些至少写出2种___onInput,onChange,onSubmit____
+
+10.react事件系统主要分为__事件注册，事件存储, 事件执行________
+
+DAY6
+1.react父组件更新组件状态通过_props____传递给子组件
+
+2.子组件更新父组件状态需要__需要父组件传递回调函数子组件调用触发____
+
+3<input ref={(input) => this.textInput = input}/>此处的input指的是谁___当前设置ref的元素，当前元素__________
+
+4.reactDom.unmountComponentAtNode（）方法参数指的是______
+
+
+DAY7
+1.在使用class类创建的组件中___static defaultProps = {}____________定义props的默认值 
+
+2.react中通过_____props.children________获取组件内包含的内容
+
+3.react中通过__setState()_____改变state的值
+
+4.在react中如果组件内部需要多个包含组件的嵌套应该使用___props________做子组件的传递
+
+5.在react中props和state是___props________优先
+
+6.react中父子组件之间的通信使用_____props_______
+
+7.react中如果组件没有没有任何功能，只是负责展示应该使用__函数创建_________
+
+8.在react中最推荐的组件的创建方式是_____函数创建____________
+
+DAY8
+1.match.__params____可以获取path中包含的一些额外数据
+
+2.match.___path____可以获取Route组件path属性的值
+
+3.import { ___BrowserRouter as Router_____ } from 'react-router-dom'补全代码实现导出BrowserRouter方法并且进行重命名
+
+4.react中声明props值的类型为string应该__static propTypes = { optionalString: PropTypes.string, }________________________写
+
+5.定义props的值的类型使用____prop-types__________模块获取类型
+
+6.定义props值的默认值使用___defaultProps______________
+
+7.声明props的值是一个react元素使用_____PropTypes.element_________________
+
+8.在react中没有自己实例的组件是_____函数组件______________
+
+9.ReactDOM中获取一个组件元素对应的dom节点使用__findDOMNode__________________
+
+10.react中通过____PropTypes_________定义props值的类型
+
+DAY9
+1._match.params___可以获取当前路由path中包含的额外数据参数
+
+2.Redirect中那个属性用来控制跳转的地址    to
+
+3.在select中selected属性是定义被选中状态的，那么在react受控组件中是根据______select的 value_______________属性控制
+
+4.如果让表单数据由 DOM 处理时，替代方案为使用______非受控组件_____________ 知识点：组件状态 
+
+5.值由React控制的输入表单元素称为_______受控组件__________ 
+
+6.在react中受控组件中input元素的vaule应该是_________state_____________中的属性
+
+7.受控组件中input默认值应该是_______state中的默认值_____________
+
+8.非受控组件中的默认值应该使用______defaultValue_______定义
+
+9.在react当中，<textarea>元素通过_____value__________定义它的文本内容
+
+10.受控组件在input输入事件处理函数中通过____event.target__________获取input元素
+
+
+周考2
+1.在react-redux中向组件传递store使用__Provider__________
+
+2.在react中吧state传递到组件使用_____connect_______________
+
+3.react中生命周期中最先可以获取到dom的是___componentWillMount________________ 
+
+4.react中用来配置路由规则的路由组件是___Route_______
+
+5.redux的数据流是___单一数据源__________
+
+6.修改state的值使用__setState()_________
+
+7.react合成事件通过___e.preventDefault___________阻止事件默认行为
+
+8.在react 路由中是通过____Link_______组件的__to________属性控制跳转
+
+9.在react中最便捷的跨级通信是使用___context__________
+
+DAY12
+1.在react中数据是__自顶向下单向__流动的
+
+2.每一个_reducer____都是纯函数，意味着没副作用，接收一定的输入，必定得到一定的输出
+
+3.react-router-dom中适合用作导航的标签是__<NavLink>___
+
+4.redux中通过__applyMiddleware___________方法添加中间件
+
+5.Reducer通过___action.type_______判断执行的任务
+
+6.dispatch通过传递___action_____执行__reducer________
+
+7.connect中第一个参数可以接收到____state_______返回一个对象，将对象内容添加到组件的___props______
+
+8.action的类型是__Object______必须有___type属性______
+
+9.添加中间件需要添加到createStore方法中的第____2______几个参数
+
+10.connect中第___2_____参数可以获取到dispatch
+
+11.react所有组件都继承自顶层类__React.Component___
+
+DAY13
+1.一个没有value属性的<input>就是一个___非受控组件__组件
+
+2.一个__受控__的<input/>组件都有一个value属性
+
+3.请定义一个受控的并可对其value进行更改的多行输入框__<textarea value={textareaValue} onChange={this.handleTextareaChange}/>____
+
+4.react中radio和checkbox通过__checked=true___来表示选中状态
+
+5.React的性能瓶颈主要出现在生成___DOM___及__DOM Diff_____的过程
+
+6.提高性能可以在___shouldComponentUpdate_____________阶段判断，如果属性及状态与上一次相同，这个时候很明显UI不会变化，也不需要执行后续生成DOM，DOM Diff的过程了
+
+7.针对列表遍历类型，遍历时候增加_唯一 key______属性值，对子组件进行唯一性识别
+
+8.shouldComponentUpdate函数的返回值是__布尔___________类型
+
+9.react中针对组件优化组要使用__PureRender______和____List and Key_________
+
+10.react中通过__react-addons-pure-rendermixin______模块解决相同值改变后虚拟DOM的diff的多余次数
+
+11.shouldComponentUpdate函数中可以接受到_nextProps____________和___nextState_________ 
+ 
+12.connect中第一个参数可以读取__redux中 state_________数据
+
+
+DAY14
+1.__高阶____组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件
+
+2.reducer本质上是个函数，reducer(previousState,action) => __newState___
+
+3.在constructor中如何给一个 this.handleClick 方法 绑定this
+this.handleClick=this.handleClick.bind(this)
+
+4.react为了提高ui渲染的效率使用了___虚拟dom______技术
+
+5.react的生命周期分为__实例化 存在期  销毁期___________这几个阶段 
+
+6.虚拟dom主要是在___render______生命周期中生成
+
+7.在react中针对html结构最好的选择是使用__jsx___________来编写
+
+8.redux中改变state需要在__reducer_______中完成
+
+9.在webpack中入口文件指定使用___entry_________
+
+10.react中数据流采用的是___单项数据流_______ 
+
+11.虚拟dom主要是在___render______生命周期中生成
+
+12.ref的值可以是___字符串____可以是____函数______
+
+DAY15
+1._元素___是构成 React 应用的最小单位
+
+2.function sum(a, b) {
+  return a + b;
+}   这样的函数 称为 什么函数？纯
+
+3.react Component在__constructor___中初始化状态 state
+
+4.react中要结合react组件和redux需要使用____connect__________方法
+
+5.在react中父子组件通信主要使用的是___props________ 
+
+6.jsx中class的写法是___className__________ 
+
+7.在react中针对于dom渲染的优化是使用__虚拟dom__________ 
+
+8.react中要结合react组件和redux需要使用___connect___________方法 
+
+9.react中组件组合可以使用_this.props.children_________接收到组件内的子节点
+
+10.自定义组件将属性作为单个对象传递给该组件，这个对象 称之为__props__
+
+DAY16
+
+1.redux中connect的作用是__连接React组件与 Redux store。____
+
+2.Ant Design是由 __react___ 框架实现的
+
+3.async函数返回_Promise对象____
+
+4.箭头函数内的this对象指向__定义时所在的对象，而不是使用时所在的对象__
+
+DAY17
+1.mockjs中的占位符是__@____
+
+2.React 组件通过一个_render()____方法，接受输入的参数并返回展示的对象
+
+3.当一个组件的_数据/状态/state/props___变化，组件将重新调用 render() 方法更新视图
+
+4.componentWillReceiveProps生命周期函数的作用是__在组件接收到一个新的prop时被调用___
+
+DAY18
+1.react中使用___findDOMNode()_____方法获取组件实例对应的dom
+
+2.react组件中如果要渲染一个组件的话render函数的返回值是____受控组件______
+
+3.在es6里面继承是通过___虚拟dom_________实现的
+
+4.react受控组件中select元素默认选中是通过___根select元素的value值________控制的 
+
+5.在class声明的类中生命静态属性是通过_static myStaticProp = 42_________
+
+6.class声明的对象中构造函数是使用___constructor_____________
+
+7.Array.from([2，4，6], (x) => x * x)执行这段代码最后得到的结果是（[4，16，36]）
+
+8.Array.of()输出的结果是__[]__
+
+9.promise中接收一个数组将多个promise包装成一个新的promise实例的方法是__promise.all()__
+
+
+周考3
+1.提高react组件性能可以在_shouldComponentUpdate_______________阶段判断，如果属性及状态与上一次相同，这个时候很明显UI不会变化，也不需要执行后续生成DOM，DOM Diff的过程了
+
+2.reack中针对列表遍历类型，遍历时候增加__key_____属性值，对子组件进行唯一性识别
+
+3.eact中在自定义组件上写的元素属性，在组件内部需要通过_____props_______接收
+
+4.react生命周期函数shouldComponentUpdate函数中可以接受到____nextProps_________和__nextState__________ 
+
+5.redux中，Reducer通过____action.type______判断执行的任务
+
+6.在JSX中class元素类名被替换成了__className_________
+
+7.在jsx中编写js表达式使用___{}________
+
+8.在react-redux中向组件传递stor使用__Provider__________
+
+9.在使用class定义的组件中state的声明方式为____this.state = {}______________
+
+10.每当React使用完一个组件，这个组件必须从 DOM 中卸载后被销毁，此时____componentWillUnmount_____________生命周期会被执行
+
+11.redux的数据流是____单一数据源_________的方式
+
+12.修改state的值使用____setState()_______
+
+13.ref 不能设置在_函数创建的组件元素___________上
+
+14.值由React控制的表单元素称为_____受控组件____________
+
+15.当组件加载到页面上之后，你可以通过 _react-dom________ 提供的 ___findDOMNode()______方法拿到组件对应的 DOM 元素
+
+16.react合成事件回调函数可以通过___bind_______和___箭头函数______实现this绑定
+
+17.react中如果添加原生事件应该在____componentDidMount____________________生命周期中执行
+
+18.在react中最便捷的跨级通信是使用_____context________
+
+19.在select中selected属性是定义被选中状态的，在react受控组件中是根据____select______的______value_____属性控制
+
+
+DAY19
+1.在react中componentWillUnmount是值____销毁的生命周期函数______
+
+2.react这样使用____受控组件________技术实现vue中的angular中数据双向绑定
+
+3.react中findDOMNode()接受____组件实例_________返回组件实例对应的dom
+
+4.react中使用___合成事件________绑定事件，并且没有兼容问题
+
+5.redux中添加中间件使用___applyMiddleware_______________ 
+
+6.将拆分后的reducer 函数进行合并使用 ___combineReducers_______ 
+
+7.reducer接受的第一个参数是__state_____，第二个参数是___action______ 
+
+8.在es6中怎么实现模块的继承，例如继承my_module模块所有变量，用一段代码表示（export * from 'my_module'）
+
+9.一个_受控___的<input>组件都有一个value属性
+
+10.react中的radio和checkbox通过__checked=true___表示选中状态
+
+DAY20
+1.react这样使用____受控组件________技术实现vue中的angular中数据双向绑定
+
+2.react中findDOMNode()接受____组件实例_________返回组件实例对应的dom
+
+3.react中使用___合成事件________绑定事件，并且没有兼容问题
+
+4.redux中添加中间件使用___applyMiddleware_______________ 
+
+5.将拆分后的reducer 函数进行合并使用 ___combineReducers_______ 
+
+6.reducer接受的第一个参数是__state_____，第二个参数是___action______ 
+
+7.在redux中reducer的功能是_根据当前触发的action对当前应用的状态（state）进行迭代____
+
+8.在webpack中进行模块引入时，遵循的是__commonJs____模块化规范
+
+9.请书写代码，配置webpack的入口和输出(入口文件为/src/index.js，输出地址为根目录下的dist文件夹)；
+entry: __dirname + "/src/index.js",
+    output: {
+        path: __dirname + "/dist",
+        filename: "[name].js",
+       
+    }
+
+10.在redux中通过__dispatch____派发事件
+
+月考
+1.使用class创建组件getDefaultProps替换为______static defaultProps = {}_______________
+
+2.在使用class定义的组件中state的声明方式为______this.state = {}____________
+
+3.在react-redux中向组件传递stor使用_____Provider_______ 组件
+
+4.React应用中的最小单位是___元素_______
+
+5.this.refs可以获取通过__ref_______属性定义的dom
+
+6.ref 不能设置在__函数创建的组件元素__________上
+
+7.react中阻止事件冒泡使用___stopPropagation_______________
+
+8.react中处理焦点事件使用____onFocus, onBlur_____________
+
+9.<button onclick="clickFn"></button>domo0级绑定事件,如果改成react合成事件是____<button onClick={clickFn}></button>______________  
+
+10.react中跨级通信最优的方案是使用____context_______
+
+11.当组件加载到页面上之后，你可以通过 ____react-dom_____ 提供的 ___findDOMNode()______方法拿到组件对应的 DOM 元素
+
+12.react中父子组件之间的通信使用___props_________
+
+13.react中声明props值的类型为string应该__static propTypes = { optionalString: PropTypes.string, }________________________写
+
+14.对于一个组件来讲，___render_______方法是唯一一个必需的方法
+
+15.class创建的组件中使用____deftaultProps_______定义默认props
+
+16.this.state写在__ constructor _____里就可以达到初始state的作用
+
+17.每一个_ 高阶组件  ____都是纯函数，意味着没副作用，接收一定的输入，必定得到一定的输出
+
+18.一个没有value属性的<input>就是一个__非受控___组件
+
+19.Redirect中那个属性用来控制跳转的地址(    to     )
+
+20.每一个_ reducer ____都是纯函数，意味着没副作用，接收一定的输入，必定得到一定的输出

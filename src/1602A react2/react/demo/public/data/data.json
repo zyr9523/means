@@ -1,0 +1,120 @@
+{
+    "selectList":["GC-高铁/城际","D-动车","Z-直达","T-特快"],
+    "navList":["车次","出发站 到达站","历时","商务座","备注"],
+    "list":[
+        {
+            "type":"GC-高铁/城际",
+            "id":0,
+            "isShow":false,
+            "listView":[
+                {
+                    "names":"G151",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:17 当日到达",
+                    "sitDown":9,
+                    "zhu":"预定"
+                },{
+                    "names":"G13",
+                    "subway":"北京南 上海虹桥",
+                    "times":"04:36 当日到达",
+                    "sitDown":"无",
+                    "zhu":"预定"
+                },{
+                    "names":"G153",
+                    "subway":"北京南 上海虹桥",
+                    "times":"05:56 当日到达",
+                    "sitDown":3,
+                    "zhu":"预定"
+                },{
+                    "names":"G157",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:04 当日到达",
+                    "sitDown":5,
+                    "zhu":"预定"
+                }
+            ]
+        },{
+            "type":"D-动车",
+            "id":1,
+            "isShow":false,
+            "listView":[
+                {
+                    "names":"D313",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:17 当日到达",
+                    "sitDown":9,
+                    "zhu":"预定"
+                },{
+                    "names":"D321",
+                    "subway":"北京南 上海虹桥",
+                    "times":"04:36 当日到达",
+                    "sitDown":"无",
+                    "zhu":"预定"
+                },{
+                    "names":"D311",
+                    "subway":"北京南 上海虹桥",
+                    "times":"05:56 当日到达",
+                    "sitDown":3,
+                    "zhu":"预定"
+                }
+            ]
+        },{
+            "type":"Z-直达",
+            "id":2,
+            "isShow":false,
+            "listView":[
+                {
+                    "names":"Z151",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:17 当日到达",
+                    "sitDown":9,
+                    "zhu":"预定"
+                },{
+                    "names":"Z13",
+                    "subway":"北京南 上海虹桥",
+                    "times":"04:36 当日到达",
+                    "sitDown":"无",
+                    "zhu":"预定"
+                },{
+                    "names":"Z153",
+                    "subway":"北京南 上海虹桥",
+                    "times":"05:56 当日到达",
+                    "sitDown":3,
+                    "zhu":"预定"
+                }
+            ]
+        },{
+            "type":"T-特快",
+            "id":3,
+            "isShow":false,
+            "listView":[
+                {
+                    "names":"T151",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:17 当日到达",
+                    "sitDown":9,
+                    "zhu":"预定"
+                },{
+                    "names":"T13",
+                    "subway":"北京南 上海虹桥",
+                    "times":"04:36 当日到达",
+                    "sitDown":"无",
+                    "zhu":"预定"
+                },{
+                    "names":"T153",
+                    "subway":"北京南 上海虹桥",
+                    "times":"05:56 当日到达",
+                    "sitDown":3,
+                    "zhu":"预定"
+                },{
+                    "names":"T157",
+                    "subway":"北京南 上海虹桥",
+                    "times":"06:04 当日到达",
+                    "sitDown":5,
+                    "zhu":"预定"
+                }
+            ]
+        }
+        
+    ]
+}

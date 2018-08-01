@@ -1,0 +1,117 @@
+填空：
+
+1.为什么要使用redux______
+	管理复杂的状态
+
+
+
+2.redux中单一数据源是指什么？
+	整个应用的state被储存在一棵objecttree中，并且这个objecttree只存在于唯一一个store中
+
+
+3.redux灵感来源于_____
+	 flux
+
+
+4.redux中action的作用是什么_____
+	Action是把数据从应用传到store的有效载荷
+
+
+单选：
+
+5.更新state的操作属于下列谁的工作？  B
+A action
+B reducer
+C mutations
+D actiontype
+
+
+6.以下什么选项为action执行函数必须要有的内容   C
+A data 
+B params
+C type
+D id
+
+
+7.reducer的作用是什么    B
+A 执行的动作类型
+B 更新state
+C 修改state
+D 跳转路由
+
+
+
+8.以下哪些选项为reducer的参数？   A
+A state
+B id
+C url
+D type
+
+9.Array.from接收几个参数？    B
+A 2
+B 3
+C 4
+D 1
+
+10.Object.assign()方法如何不改变原对象    A
+A 将第一个参数给空对象
+B 将最后一个参数给空对象
+C 赋给一个变量
+D 第一个参数设为true
+
+11.reducer的返回值必须为什么？    C
+
+A 函数
+B 对象
+C 新的state
+D 旧的state
+
+12.在redux中combineReducers的作用是什么？    D
+A 将action执行函数返回一个函数
+B 将reducer返回的内容改变
+C 将reducer的值修改
+D 把一个由多个不同 reducer 函数作为 value 的 object，合并成一个最终的 reducer 函数
+
+
+多选：
+
+13.redux的三大原则是哪些？   ABC
+
+A 单一数据源
+B State 是只读的
+C 使用纯函数来执行修改
+D 数据双向绑定
+
+14.redux中包含哪些内容？   AB
+A action
+B reducer
+C mutations
+D 组件
+
+
+15.一般action要注意的问题是哪些？   AB
+A action内必须有一个type字段	
+B 还需要一个参数	
+C action可以返回一个字符串	
+D action可以返回一个数组		
+
+
+16.以下属于reducer禁止操作的事情有哪些？   ABC
+A 修改传入参数	
+B 执行有副作用的操作，如 API 请求和路由跳转	
+C 调用非纯函数，如 Date.now() 或 Math.random()	
+D 更新state
+
+
+
+判断：
+
+17.action内可以做state更新    X
+
+18.reducer的工作就是如何更新state    Y
+
+19.reducer内可以执行路由跳转    X
+
+20.reducer不能直接修改state     Y
+
+

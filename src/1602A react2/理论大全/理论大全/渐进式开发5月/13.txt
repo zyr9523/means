@@ -1,0 +1,146 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0028-  
+渐进式开发13
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[6]多选题[3]判断题[3]填空题(手动判卷)[8]
+试卷总分：100
+1.[单选题](5分)
+对于受控的组件说法正确的是？
+A: 你应该始终传一个value属性进去，并且注册一个onChange的辅助方法来让组件变得可变
+B: 一个受控的组件自己维护自己的state
+C: 没有value属性
+D: 没办法更改value
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+react的select下拉框中通过添加什么属性实现多选下拉列表？
+A: multiple={true}
+B: checkbox
+C: checked={true}
+D: selected
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+<input type="text" />这是什么组件？
+A: 受控组件
+B: 非受控组件
+C: 只要组件接收到新 props，mapDispatchToProps 也会被调用
+D: 在这里不可以将action creater与dispatch绑定
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+以下选项中哪个生命周期只调用一次？
+A: componentWillReceiveProps
+B: getDefaultProps
+C: render
+D: shouldComponentUpdate
+正确答案： B 
+试题解析：
+我的答案： C 
+5.[单选题](5分)
+react中使用什么技术保证高速的UI渲染   知识点：优化  来源：大纲
+A: 虚拟DOM
+B: 单向数据流
+C: 双向绑定
+D: MVC设计模式
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+react中一个react元素定义了ref可以通过什么获取  知识点：ref   来源：大纲
+A: refs
+B: ref
+C: $ref
+D: $refs
+正确答案： A 
+试题解析：
+我的答案： A 
+7. [多选题] (5分)
+在react中常用事件都有哪些？
+A: 键盘事件
+B: 焦点事件
+C: 表单事件
+D: 鼠标事件
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+8. [多选题] (5分)
+关于redux描述正确的是？
+A: 应用中所有的 state 都以一个对象树的形式储存在一个单一的 store 中
+B: 惟一改变 state 的办法是触发 action，一个描述发生什么的对象。
+C: 为了描述 action 如何改变 state 树，你需要编写 reducers。
+D: redux中不可以修改数据
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+9. [多选题] (5分)
+哪些事件类型在react中可以使用？
+A: 合成事件
+B: 原生事件
+C: onChangStateSuccess
+D: onChangStateError
+正确答案：AB
+试题解析：
+我的答案： AB 
+10. [判断题] (5分)
+一个表单没有value props（单选按钮和复选框对应的是checked prop），就可称为非受控组件
+正确答案： 对 
+试题解析：
+我的答案： 对 
+11. [判断题] (5分)
+在React中，把真实的DOM转换成JavaScript对象树，也就是所谓的虚拟DOM。
+正确答案： 对 
+试题解析：
+我的答案： 对 
+12. [判断题] (5分)
+react中虚拟dom是在shouldComponentUpdate之后生成的  知识点：优化：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+13. [填空题(手动判卷)] (5分)
+一个没有value属性的<input>就是一个_____组件
+正确答案： 非受控组件 
+试题解析：
+我的答案： 非受控 
+14. [填空题(手动判卷)] (5分)
+（网站）一个____的<input/>组件都有一个value属性
+正确答案： 受控 
+试题解析：
+我的答案： 受控 
+15. [填空题(手动判卷)] (5分)
+请定义一个受控的并可对其value进行更改的多行输入框______
+正确答案： <textarea value={textareaValue} onChange={this.handleTextareaChange}/> 
+试题解析：
+我的答案： <textarea value={textareaValue} onChange={this.handleChange.bind(this)} ></textarea> 
+16. [填空题(手动判卷)] (5分)
+提高性能可以在________________阶段判断，如果属性及状态与上一次相同，这个时候很明显UI不会变化，也不需要执行后续生成DOM，DOM Diff的过程了  知识点：优化 来源：大纲
+正确答案： shouldComponentUpdate 
+试题解析：
+我的答案： shouldComponentUpdate 
+17. [填空题(手动判卷)] (5分)
+shouldComponentUpdate函数的返回值是_____________类型   知识点：优化 来源：大纲
+正确答案： 布尔 
+试题解析：
+我的答案： 布尔 
+18. [填空题(手动判卷)] (5分)
+react中针对组件优化组要使用________和_____________  知识点：优化 来源：大纲
+正确答案： PureRender, List and Key 
+试题解析：
+我的答案： PureRender list and key 
+19. [填空题(手动判卷)] (5分)
+react中通过________模块解决相同值改变后虚拟DOM的diff的多余次数    知识点：优化  来源：大纲
+正确答案： react-addons-pure-render-mixin 
+试题解析：
+我的答案： react-min 
+20. [填空题(手动判卷)] (5分)
+connect中第一个参数可以读取___________数据   知识点：redux 来源：大纲
+正确答案： redux中 state 
+试题解析：
+我的答案： redux 中的 state 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        class Wrap extends React.Component{
+            constructor(){
+                super();
+                this.state = {
+                    val:0,
+                    type:'摄氏度',
+                }
+            }
+            render(){
+                return (
+                    <div>
+                        <Degree title='摄氏度' val={this.state.val} change={this.change.bind(this)} type={this.state.type}/>
+                        <Degree title='华氏度' val={this.state.val} change={this.change.bind(this)} type={this.state.type}/>
+                    </div>
+                )
+            }
+            change(data){
+                this.setState({
+                    val:data.value,
+                    type:data.type
+                })
+            }
+        }
+        class Degree extends React.Component{
+            //摄氏度 = （华氏度 - 32）/1.8
+            render(){
+                let {title,val,change,type} = this.props;
+                if(type !== title){
+                    if(type == '摄氏度'){
+                        val = val*1.8 + 32;
+                    }else{
+                        val = (val - 32) / 1.8;
+                    }
+                }
+                return (
+                    <div>
+                        {title}:<input type="text" value={val} onChange={(e)=>{
+                            change({
+                                value:e.target.value,
+                                type:title
+                            })
+                        }}/>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Wrap/>,document.querySelector('#root'));
+    </script>
+</body>
+</html>

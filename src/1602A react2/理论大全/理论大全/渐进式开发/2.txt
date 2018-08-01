@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0027-  
+渐进式开发2
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 全栈开发方向	阶段 : 专业高级阶段	课程 : 第5门：渐进式框架开发	单元 : 第二单元：React组件
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+react的数据流方式是什么？
+A: 单向数据流
+B: 双向数据流
+C: 没有规定数据流方式
+D: 自下向上单向数据流
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+props和state描述正确的是？
+A: 尽可能使用props当做数据源，state用来存放状态值
+B: 不必区分，都是操作数据
+C: 可以直接使用this.props修改内容
+D: 直接可以使用this.state修改数据
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+对于组件数据通讯描述正确的是
+A: 父组件通过state传递给子组件
+B: 父组件通过props传递给子组件
+C: 父组件通过setstate传递给子组件
+D: 子组件通过修改props更新父级参数
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+如何在react.component形式中定义state
+A: 默认生成
+B: getInitialState
+C: getDefaultState
+D: constructor中直接设置this.state
+正确答案： D 
+试题解析：
+我的答案： D 
+5.[单选题](5分)
+如何在react.component中定义默认的props
+A: 默认生成
+B: componentName.defaultProps = {}
+C: getDefaultProps
+D: defaultProps
+正确答案： B 
+试题解析：
+我的答案： B 
+6.[单选题](5分)
+react.component定义的组件中某个方法里默认打印this结果是什么
+A: undefined
+B: not definde
+C: react.component类
+D: react
+正确答案： A 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+react中组件的数据传递，知识点：react组件 来源：大纲
+A: state
+B: data
+C: props
+D: 本地存储
+正确答案： A 
+试题解析：
+我的答案： A 
+8.[单选题](5分)
+如果一个列表没有行为，没有状态，应该使用那种组件定义的方式，知识点：react组件 来源：大纲
+A: class定义
+B: 函数定义
+C: creatClass定义
+D: 以上都不对
+正确答案： B 
+试题解析：
+我的答案： B 
+9.[单选题](5分)
+在react中数据流动是什么规则，知识点：react组件 来源：大纲
+A: 单项数据流
+B: 双向数据绑定
+C: 函数传参
+D: data传参
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+react中组件内部状态是，知识点：react组件 来源：大纲
+A: props
+B: data
+C: state
+D: start
+正确答案： C 
+试题解析：
+我的答案： C 
+11. [多选题] (5分)
+无状态组件的特点？
+A: 组件不会被实例化，整体渲染性能得到提升
+B: 组件不能访问this对象
+C: 组件无法访问生命周期的方法
+D: 无状态组件只能访问输入的props，同样的props会得到同样的渲染结果，不会有副作用
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+12. [多选题] (5分)
+以下属于react定义组件方式的有？
+A: 函数式的无状态组件
+B: es5原生方式react.createClass
+C: es6形式的extends react.component
+D: const
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+13. [多选题] (5分)
+react.createClass的特性？
+A: React.createClass会自绑定函数方法
+B: 属于es5书写形式
+C: 和无状态组件差异不大
+D: 用于生成一个组件类
+正确答案：ABD
+试题解析：
+我的答案： AB 
+14. [多选题] (5分)
+react.component的特性？
+A: 是以ES6的形式来创建react的组件的
+B: 创建的组件，其成员函数不会自动绑定this
+C: 和无状态组件差异不大
+D: 至少有一个render方法
+正确答案：ABD
+试题解析：
+我的答案： AB 
+15. [多选题] (5分)
+react.component绑定this的方法有哪些
+A: this.handleClick = this.handleClick.bind(this); //构造函数中绑定
+B: <div onClick={this.handleClick.bind(this)}></div> //使用bind来绑定
+C: <div onClick={()=>this.handleClick()}></div> //使用arrow function来绑定
+D: 使用on来绑定
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+16. [判断题] (5分)
+？props是property的缩写，可以理解为HTML标签的attribute。
+正确答案： 对 
+试题解析：
+我的答案： 错 
+17. [判断题] (5分)
+state和props差异不大，可以不用区分设置
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+修改当前组件的state时必须使用setstate
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [判断题] (5分)
+react中可以使用$parent获取到父组件，知识点：react组件 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+20. [判断题] (5分)
+react中组件内部状态需要写到data里面，知识点：react组件 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 

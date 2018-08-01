@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/redux/4.0.0/redux.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        console.log(Redux)
+        let reducer = (state={num:0},action)=>{
+            switch(action.type){
+                case 'ADD_NUM':
+                    state.num += action.text
+                    return {...state};
+                case 'DEL_NUM':
+                    state.num -= action.text
+                    if(state.num<=0){
+                        state.num = 0
+                    }
+                    return {...state};
+                default:
+                    return state
+            }
+            
+        }
+        let store = Redux.createStore(reducer);
+       
+        class App extends React.Component{
+            constructor(){
+                super();
+                store.subscribe(()=>{
+                    this.setState({})
+                })
+            }
+            render(){
+                // console.log(store.getState())
+                let {num} = store.getState();
+                return (
+                    <div>
+                        <button onClick={this.add.bind(this,'-')}>-</button>
+                        <span>{num}</span>
+                        <button onClick={this.add.bind(this,'+')}>+</button>
+                    </div>
+                )
+            }
+            add(types){
+                if(types === '+'){
+                    store.dispatch({
+                        type:'ADD_NUM',
+                        text:1
+                    })
+                }else{
+                    store.dispatch({
+                        type:'DEL_NUM',
+                        text:1
+                    })
+                }
+            }
+        }
+        ReactDOM.render(<App/>,document.querySelector('#root'))
+    </script>
+</body>
+</html>

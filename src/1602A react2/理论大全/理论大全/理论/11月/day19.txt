@@ -1,0 +1,68 @@
+3-填空	async函数返回____promise对象__	
+	在react中定义一个受控的并 可对其value进行更改 的 多行输入框 __<textarea value={textareaValue} onChange={this.handleTextareaChange}/>	____							
+	一个__	受控__的<input>组件都有一个value属性							
+	react中的radio和checkbox通过___checked=true__表示选中状态								
+1-单选:select中通过添加什么属性实现多选下拉列表？正确答案:A	
+        A:multiple={true}	
+        B:checkbox	
+        C:checked={true}	
+        D:selected			
+	对虚拟dom描述错误的是？	正确答案：D	
+        A:用JS表示DOM结构	
+        B:比较两棵DOM树的差异是 Virtual DOM 算法最核心的部分	
+        C:React又通过在这个虚拟DOM上实现了一个 diff 算法找出最小变更，再把这些变更写入实际的DOM中
+        D:diff后的差异不会应用到真正的DOM树上		
+	在react应用中获取store数据的方法是？	正确答案:A
+        A:connect()	
+        B:dispatch()	
+        C:reducer	
+        D:store		
+	不能实现对象深拷贝的方法的是？	正确答案:C
+        A:JSON.stringify(JSON.parse(obj))	
+        B:$.extend()	
+        C:Object.assign()	
+        D:Object.create()			
+	react中实现子向父传参，以下说法正确的是？正确答案:B
+        A:	通过props可以实现子向父传参	
+        B:可以通过子级调用父级组件的props属性实现子向父通信	
+        C:通过state可以实现子向父通信	
+        D:可以通过constructor实现子向父传参			
+	reducer的返回值必须为什么？	正确答案:C
+        A:this.state	
+        B:props	
+        C:newState	
+        D:oldState			
+	下面那个方法能使组件调用自身的render()方法重新渲染组件	正确答案：A
+        A:forceUpdate	
+        B:update	
+        C:beforeupdate	
+        D:afterupdate		
+	在redux中combineReducers的作用是什么？	正确答案：D
+        A:将action执行函数返回一个函数	
+        B:将reducer返回的内容改变	
+        C:将reducer的值修改	
+        D:把一个由多个不同 reducer 函数作为 value 的 object，合并成一个最终的 reducer 函数		
+2-多选	createdStore方法创建的store是一个对象，它包含以下哪些方法？	正确答案：ABCD
+        A:getState()	
+        B:dispatch(action)	
+        C:subscribe(listener)	
+        D:replaceReducer(nextReducer)			
+	一般action要注意的问题是哪些？	正确答案：AB	
+        A:action内必须有一个type字段	
+        B:action必须是一个对象	
+        C:action可以返回一个字符串	
+        D:action可以返回一个数组		
+	redux中包含哪些内容？	正确答案：AB	
+        A:action	
+        B:reducer	
+        C:mutations	
+        D:组件			
+	connect接受的参数都有哪些？	正确答案：	ABCD	
+        A:[mapStateToProps(state, [ownProps]: stateProps)]（类型：函数）	
+        B:[mapDispatchToProps(dispatch, [ownProps]): dispatchProps]（类型：对象或函数）	
+        C:[mergeProps(stateProps, dispatchProps, ownProps): props]（类型：函数）	
+        D:[options](类型：对象)		
+-判断	可以在组件中直接修改props							                    答：B	
+	shouldComponentUpdate返回false，props发生改变，视图会重新渲染				答：	B	
+	<Switch> 下的子节点只能是 <Route> 或 <Redirect> 元素						答：A	
+	不推荐开发者滥用state，过多的内部状态会让数据流混乱，程序变得难以维护			答：	A	

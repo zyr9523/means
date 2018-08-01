@@ -1,0 +1,27 @@
+单选
+1-5  BAAAA
+
+6-8  DAC
+
+填空
+9  PropTypes.func.isRequired
+
+10 AddTodo.propTypes = {
+    onAddTodo:               PropTypes.func.isRequired
+}父组件没有传递props的时候增加一段什么代码才能使程序不报错
+AddTodo.defaultProps = {name: 'lili'}
+
+11 componentWillUnmount
+
+12 constructor
+
+多选
+13 ABCD
+14 AB
+15 ABC
+16 ABC
+17 ABC
+判断
+18 V
+19 V
+20 X

@@ -1,0 +1,97 @@
+@mixin box($w:100%,$h:100%){
+  width: $w;
+  height: $h;
+}
+@mixin flex($j:space-between){
+  display: flex;
+  flex-direction: column;
+  justify-content: $j;
+  align-items: center;
+}
+
+
+#root,.app{
+  @include box;
+}
+.app{
+  @include flex;
+  background: rgba(0,0,0,.3);
+  .header{
+    @include box(100%,1rem);
+    text-align: center;
+    .title{
+      @include box(100%,.4rem);
+      line-height: .4rem;
+      font-size: .16rem;
+    }
+    &>input{
+      @include box(80%,.4rem);
+      border: .01rem solid #ccc;
+      font-size:.16rem;
+      text-indent: 1em;
+    }
+  }
+  .select-all{
+    @include box(80%, .4rem);
+    @include flex(flex-start);
+    flex-direction: row;
+    .remove{
+      margin-left: .2rem;
+      border: .01rem solid #000;
+      border-radius: .1rem;
+      background: none;
+      padding: .04rem;
+      outline: none;
+    }
+  }
+
+
+  .list{
+    @include box(90%,auto);
+    flex: 1;
+    .todo,.did{
+      @include box(100%,auto);
+      .title{
+        @include flex;
+        @include box(100%,.4rem);
+        padding: 0 5%;
+        flex-direction: row;  
+        span{
+          font-size: .16rem;
+          font-weight: 800;
+          &:nth-child(2){
+            @include box(.3rem,.3rem);
+            border: .01rem solid #ccc;
+            text-align: center;
+            border-radius: 50%;
+            line-height: .28rem;
+            background: #cad;
+          }
+        }
+      }
+      .todolist,.didlist{
+        li{
+          &.active{
+            background: #cad;
+            color: #fff;
+          }
+          @include flex;
+          border-left:.04rem solid #acc;
+          flex-direction: row;
+          @include box(100%,.3rem);
+          padding: 0 2%;
+          background: #fff;
+          span{
+            @include box(.2rem,.2rem);
+            border: .01rem solid #ccc;
+            text-align: center;
+            line-height: .16rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    
+    }
+  }
+}
+

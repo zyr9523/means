@@ -1,0 +1,123 @@
+单选：
+1.以下对proptypes验证描述正确的是？   B
+A.可以检测任意类型
+B.如果父组件没有传递props，proptypes检测会发生在defaultprops之后
+C.如果父组件没有传递props，proptypes检测会发生在defaultprops之前
+D.
+
+2.proptypes检测是否为一个元素使用什么方法？   A
+A.PropTypes.element
+B.PropTypes.text
+C.PropTypes.nodes
+D.PropTypes.el
+
+3.组件的默认props如何设置     A
+A.defaultprops
+B.initprops
+C.initialprops
+D.
+
+4.componentDidMount说法不正确的有？    D
+A.真实的DOM被渲染出来后调用
+B.可以访问真实的dom
+C.在服务端中，该方法不会被调用
+D.真实dom渲染之前调用
+
+
+5.以下哪些生命周期只调用一次？   A
+A.getDefaultProps
+B.componentWillReceiveProps
+C.render
+D.shouldComponentUpdate
+
+
+6.下面那个方法能使组件调用自身的render()方法重新渲染组件   A
+A.forceUpdate
+B.update
+C.beforeupdate
+D.afterupdate
+
+
+7.以下属于实例期的有哪些？    C
+A.componentWillReceiveProps
+B.shouldComponentUpdate
+C.componentWillMount
+D.componentWillUnmount
+
+
+8.以下描述错误的是？    C
+A.componentWillReceiveProps属于存在期  
+B.shouldComponentUpdate属于存在期
+C.componentWillUnmount属于存在期
+D.
+
+
+填空：
+
+9.requiredFunc: PropTypes_____补全代码实现验证必须为函数并且不能为空
+		.func.isRequired
+
+
+10.AddTodo.propTypes = {
+    		onAddTodo: PropTypes.func.isRequired
+	}父组件没有传递props的时候增加一段什么代码才能使程序不报错
+		定义默认的props类型是函数并且不能为空，AddTodo.defaultProps = {
+    			onAddTodo: () => {}
+		}
+
+
+
+11.组件被移除之前的生命周期是那个________
+		componentWillUnmount
+
+
+12.this.state写在_______里就可以达到初始state的作用
+		constructor
+
+
+
+多选：
+
+13.以下属于proptypes能检测的类型有？  ABCD
+A.array
+B.bool
+C.func
+D.string
+
+
+14.以下属于react存在期的生命周期有哪些？  ABC
+A.componentWillReceiveProps
+B.shouldComponentUpdate
+C.componentWillUpdate
+D.componentWillMount
+
+15.react组件分为哪几个大的周期？  ABC
+A.实力化
+B.存在期
+C.销毁期
+D.更改期
+
+16.对于shouldComponentUpdate描述正确的是？   ABC
+A.组件是否应当渲染新的props或state
+B.返回false表示跳过后续的生命周期方法
+C.在首次渲染期间或者调用了forceUpdate方法后，该方法不会被调用
+D.可以不用指定返回值
+
+17.componentWillReceiveProps描述正确的是？   ABC
+A.组件接收到新的props时调用
+B.并将其作为参数nextProps使用
+C.此时可以更改组件props及state
+D.
+
+
+判断：
+
+18.defaultProps比proptypes执行的慢   X
+
+19.从reactv15.5开始react.proptypes已经弃用，建议使用prop-types库   Y
+
+20.proptypes只可以验证类型，不能检测是否有值    X
+
+
+
+

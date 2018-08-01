@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0095-  
+渐进式开发6
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+父组件内定义play方法，子组件如何将数据传给父组件
+A: this.state.play
+B: this.props.play
+C: play
+D: this.play
+正确答案： B 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+在react中对于findDOMNode的说法正确的
+A: 当参数是DOM，返回值就是该DOM
+B: 当参数是Component获取的是该Component？
+C: 当参数是Component获取的是该父级组件？
+D: null
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](5分)
+ref描述正确的是？
+A: 添加到Compoennt实例上获取到的是dom
+B: 添加到dom上获取到的是dom
+C: 添加到dom上获取到的是component实例
+D: 替换值
+正确答案： B 
+试题解析：
+我的答案： B 
+4.[单选题](5分)
+react事件系统到包含哪些？
+A: 事件删除
+B: 事件等待
+C: 事件注册
+D: 冒泡
+正确答案： C 
+试题解析：
+我的答案： C 
+5.[单选题](5分)
+在react中哪个生命周期只调用一次？
+A: getDefaultProps
+B: componentWillReceiveProps
+C: render
+D: shouldComponentUpdate
+正确答案： A 
+试题解析：
+我的答案： A 
+6.[单选题](5分)
+在react中属于实例期的生命周期有哪些？
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: componentWillMount
+D: componentWillUnmount
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+对于生命周期描述错误的是？
+A: componentWillReceiveProps属于存在期
+B: shouldComponentUpdate属于存在期
+C: componentWillUnmount属于存在期
+D: componentWillMount属于销毁期
+正确答案： C 
+试题解析：
+我的答案： C 
+8.[单选题](5分)
+父子组件的通信最优的方案是使用, 知识点：组件通信 来源：大纲
+A: props
+B: 自定义事件
+C: 回调函数
+D: state
+正确答案： A 
+试题解析：
+我的答案： A 
+9.[单选题](5分)
+子组件使用父组件的数据是属于那种通信方式， 知识点：组件通信 来源：大纲
+A: 父子通信
+B: 子父通信
+C: 跨级通信
+D: 同级通信
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+父组件使用子组件的数据是属于那种通信方式， 知识点：组件通信 来源：大纲
+A: 父子通信
+B: 子父通信
+C: 跨级通信
+D: 同级通信
+正确答案： B 
+试题解析：
+我的答案： B 
+11. [多选题] (5分)
+组件通讯一般包含哪几种
+A: 父向子
+B: 子向父
+C: 没有嵌套的组件
+D: 组件间不能通讯
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+12. [多选题] (5分)
+对于react获取dom描述正确的有？
+A: ref添加到Compoennt上获取的是Compoennt实例
+B: 添加到原生HTML上获取的是DOM
+C: ReactDOM.findDOMNode，当参数是DOM，返回值就是该DOM
+D: 当参数是Component获取的是该Component render方法中的DOM
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+13. [多选题] (5分)
+在react中ref和findDOMNOde区别描述正确的有？
+A: refs可以拿子子组件的props/state/方法；
+B: findDOMNOde拿到的是原生的标签相关属性；
+C: 一个获取dom一个获取组件
+D: refs可以获取到当前元素
+正确答案：ABD
+试题解析：
+我的答案： AB 
+14. [多选题] (5分)
+在react中可以使用的事件类型有？
+A: 合成事件
+B: 原生事件
+C: onChangStateSuccess
+D: onChangStateError
+正确答案：AB
+试题解析：
+我的答案： AB 
+15. [多选题] (5分)
+下面那些方案可以实现react子父组件通信  知识点：组件通信 来源：大纲
+A: props回调函数
+B: context
+C: refs
+D: 自定义事件
+正确答案：ACD
+试题解析：
+我的答案： AC 
+16. [判断题] (5分)
+componentWillUnmount在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等
+正确答案： 对 
+试题解析：
+我的答案： 对 
+17. [判断题] (5分)
+子向父传值可以使用自定义事件
+正确答案： 错 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+没有嵌套关系的组件通讯可以同时调用一个父级给的回调函数
+正确答案： 对 
+试题解析：
+我的答案： 对 
+19. [判断题] (5分)
+react中使用contenxt实现跨级组件通信    知识点：组件通信 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+react中利用回调可以实现子父组件的通信        知识点：组件通信 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 

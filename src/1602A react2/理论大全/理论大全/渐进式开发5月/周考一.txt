@@ -1,0 +1,330 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0016-  
+渐进式开发一周考
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[40]单选题[20]多选题[10]判断题[10]
+试卷总分：100
+1.[单选题](3分)
+网站工程学院－在react中编写dom结构使用   知识点：jsx  来源：大纲
+A: xml
+B: div
+C: html
+D: jsx
+正确答案： D 
+试题解析：
+我的答案： D 
+2.[单选题](3分)
+网站工程学院－在react中获取组件实例对应的dom使用    知识点：dom操作  来源：大纲
+A: findDOMNode()
+B: ref
+C: refs
+D: child
+正确答案： A 
+试题解析：
+我的答案： A 
+3.[单选题](3分)
+网站工程学院－在JSX中编写js表达式写在  知识点：jsx  来源：大纲
+A: {{}}
+B: 指令
+C: {}
+D: ""
+正确答案： C 
+试题解析：
+我的答案： C 
+4.[单选题](3分)
+网站工程学院－下面程序中那个最终输出3，知识点：jsx 来源：大纲
+A: <input value={1+2} />
+B: <input value="1+2"/>
+C: <input value={"1+2"} />
+D: <input value="1+2" />
+正确答案： A 
+试题解析：
+我的答案： A 
+5.[单选题](3分)
+网站工程学院－ReactDOM.render()方法中的第一个参数是，知识点：jsx 来源：大纲
+A: 选择器
+B: react元素
+C: dom节点
+D: node
+正确答案： B 
+试题解析：
+我的答案： B 
+6.[单选题](3分)
+网站工程学院－react中组件的内部状态是   知识点：状态  来源：大纲
+A: props
+B: prop
+C: state
+D: data
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](3分)
+网站工程学院－下面改变state正确的是使用   知识点：状态 来源：大纲
+A: this.name="改变"
+B: this.state.name="改变"
+C: this.setState({name: '改变'})
+D: this.setState({name = '改变'})
+正确答案： C 
+试题解析：
+我的答案： C 
+8.[单选题](3分)
+网站工程学院－react中组件的数据传递，知识点：react组件 来源：大纲
+A: state
+B: data
+C: props
+D: 本地存储
+正确答案： C 
+试题解析：
+我的答案： A 
+9.[单选题](3分)
+网站工程学院－jsx里面class被替换成了什么 知识点：jsx  来源：大纲
+A: className
+B: name
+C: id
+D: href
+正确答案： A 
+试题解析：
+我的答案： A 
+10.[单选题](3分)
+网站工程学院－在react中refs的返回值是  知识点：dom操作  来源：大纲
+A: 字符串
+B: 数组
+C: 对象
+D: 布尔
+正确答案： C 
+试题解析：
+我的答案： C 
+11.[单选题](3分)
+网站工程学院－react合成事件中通过什么阻止事件默认行为  知识点：事件处理  来源：大纲
+A: return false
+B: e.stop
+C: e.preventDefault
+D: return null
+正确答案： C 
+试题解析：
+我的答案： C 
+12.[单选题](3分)
+网站工程学院－react中组件不需要状态和生命周期，只是做静态展示应该使用什么组件创建方式  知识点：组件创建  来源：大纲
+A: creactClass
+B: class类声明
+C: 函数式
+D: 变量式
+正确答案： C 
+试题解析：
+我的答案： C 
+13.[单选题](3分)
+网站工程学院－setState的第二参数是干什么的   知识点：react状态  来源：大纲
+A: state值修改完成的回调
+B: state改变之前的拦截器
+C: state新的值
+D: state值改变时修改state的最后机会
+正确答案： A 
+试题解析：
+我的答案： A 
+14.[单选题](3分)
+网站工程学院－组件的 props 或者 state 的改变不需要重新渲染可以使用那个方法控制,  ,  知识点：生命周期 来源：日考
+A: componentWillReceiveProps
+B: componentWillUpdate
+C: shouldComponentUpdate
+D: render
+正确答案： C 
+试题解析：
+我的答案： C 
+15.[单选题](3分)
+网站工程学院－componentWillUnmount主要的任务是, 知识点：声明周期 来源：大纲
+A: 创建事件监听器
+B: 实例化state
+C: 改变state
+D: 清理和销毁
+正确答案： D 
+试题解析：
+我的答案： D 
+16.[单选题](3分)
+网站工程学院－下面方法中那个方法是需要创建并返回一个虚拟dom,  知识点：生命周期 来源：日考
+A: componentDidMount
+B: componentWillMount
+C: render
+D: shouldComponentUpdate
+正确答案： C 
+试题解析：
+我的答案： C 
+17.[单选题](3分)
+网站工程学院－ref的值是函数的时候组件卸载时则会传入  知识点：dom操作  来源：大纲
+A: ""
+B: undefined
+C: null
+D: dom
+正确答案： C 
+试题解析：
+我的答案： C 
+18.[单选题](3分)
+网站工程学院－在react合成事件中this默认是   知识点：事件处理  来源：大纲
+A: ""
+B: undefined
+C: null
+D: dom
+正确答案： B 
+试题解析：
+我的答案： B 
+19.[单选题](3分)
+网站工程学院－吧ref作用到组件元素上，通过refs获取到的是,  知识点：dom操作 来源：日考
+A: DOM节点
+B: 组件实例
+C: 组件对象
+D: 组件原型
+正确答案： B 
+试题解析：
+我的答案： B 
+20.[单选题](3分)
+网站工程学院－ReactDOM.findDOMNode(this)返回的是,  知识点：dom操作 来源：日考
+A: 组件实例相对应的DOM节点
+B: 获取到当前的对象
+C: 获取到body
+D: 获取到当前组件实例
+正确答案： A 
+试题解析：
+我的答案： A 
+21. [多选题] (2分)
+网站工程学院－ref的值可以是  知识点：dom操作  来源：大纲
+A: 字符串
+B: 布尔值
+C: 函数
+D: 数字
+正确答案：AC
+试题解析：
+我的答案： AC 
+22. [多选题] (2分)
+网站工程学院－ref的值是函数的话，在执行顺序上下面那个描述是正确的 知识点：dom操作  来源：大纲
+A: render之前
+B: componentDidUpdate之后
+C: componentDidUpdate之前
+D: componentDidMount之前
+正确答案：CD
+试题解析：
+我的答案： CD 
+23. [多选题] (2分)
+网站工程学院－ref可以作用在  知识点：dom操作  来源：大纲
+A: dom元素上
+B: class类声明的组件上
+C: 函数组件
+D: input元素
+正确答案：ABD
+试题解析：
+我的答案： ACD 
+24. [多选题] (2分)
+网站工程学院－下面那些生命周期执行一次,  知识点：生命周期 来源：日考
+A: componentDidMount
+B: render
+C: getDefaultProps
+D: componentWillReceiveProps
+正确答案：AB
+试题解析：
+我的答案： AB 
+25. [多选题] (2分)
+网站工程学院－在react中合成事件this指向问题可以通过什么方式解决   知识点：事件处理  来源：大纲
+A: bind
+B: call
+C: apply
+D: 借用箭头函数
+正确答案：AD
+试题解析：
+我的答案： AD 
+26. [多选题] (2分)
+网站工程学院－react中合成事件描述正确的是  知识点：事件处理 来源：大纲
+A: 兼容
+B: 自动销毁
+C: React 元素的事件处理和 DOM元素的很相似
+D: 和原生事件一样
+正确答案：ABC
+试题解析：
+我的答案： ABC 
+27. [多选题] (2分)
+网站工程学院－ref可以使用下面那种方法调用,  知识点：dom操作 来源：日考
+A: this.refs['refname']
+B: this.refs.refname
+C: this.ref
+D: refs
+正确答案：AB
+试题解析：
+我的答案： AB 
+28. [多选题] (2分)
+网站工程学院－在组件内部state修改后组件内那个生命周期不会执行,  知识点：生命周期 来源：大纲
+A: componentWillReceiveProps
+B: shouldComponentUpdate
+C: render
+D: getInitialState
+正确答案：AD
+试题解析：
+我的答案： AD 
+29. [多选题] (2分)
+网站工程学院－下面那些方法是react-dom提供的,  知识点：dom操作 来源：日考
+A: render()
+B: findDOMNode()
+C: append()
+D: addClass()
+正确答案：AB
+试题解析：
+我的答案： AB 
+30. [多选题] (2分)
+ref可以使用下面那种方法调用,  知识点：dom操作 来源：日考
+A: this.refs['refname']
+B: this.refs.refname
+C: this.ref
+D: refs
+正确答案：AB
+试题解析：
+我的答案： AB 
+31. [判断题] (2分)
+网站工程学院－react中和vue一样可以使用自定义指令 知识点：react  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+32. [判断题] (2分)
+网站工程学院－ref的值可以是字符串  知识点：dom操作  来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+33. [判断题] (2分)
+网站工程学院－react中可以通过findDOMNode(组件实例) 返回对应dom,  知识点：dom操作 来源：日考
+正确答案： 对 
+试题解析：
+我的答案： 对 
+34. [判断题] (2分)
+网站工程学院－通过refs可以获取使用ref设置属性的dom,  知识点：dom操作 来源：日考
+正确答案： 对 
+试题解析：
+我的答案： 对 
+35. [判断题] (2分)
+网站工程学院－react合成事件可以使用return false阻止事件默认行为 知识点：事件处理 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+36. [判断题] (2分)
+网站工程学院－在react中ref只是用于获取dom元素   知识点：dom操作  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+37. [判断题] (2分)
+网站工程学院－在react合成事件的事件名称是驼峰命名  知识点：合成事件 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+38. [判断题] (2分)
+网站工程学院－ref作用在组件元素上和作用在dom元素上返回值都一样  知识点：状态  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+39. [判断题] (2分)
+网站工程学院－在react中修改state只能使用setState()方法  知识点：状态  来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+40. [判断题] (2分)
+网站工程学院－在react中使用的jsx和html是完全一样的  知识点：jsx  来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 

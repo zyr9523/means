@@ -1,0 +1,20 @@
+.start{
+    flex: 1;
+    background: rgb(116, 61, 116);
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        width: 130px;
+        height: 50px;
+        border:none;
+        background: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -55px;
+        top:430px;
+    }
+}

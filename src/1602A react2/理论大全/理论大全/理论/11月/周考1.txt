@@ -1,0 +1,203 @@
+填空：
+1.父组件更新组件状态通过_____传递给子组件									props		
+
+
+2.子组件更新父组件状态需要______							
+	     父组件传递回调函数子组件调用触发		
+
+
+3.React._____可以定义组件（常用的）									Component		
+
+
+4.ref={(input) => this.textInput = input}此处的input指的是谁_____________。				当前设置ref的元素，当前元素		
+
+
+5.reactDom.unmountComponentAtNode（）方法里接收什么参数___________________。				指定的容器
+
+
+单选：
+		
+6.无状态组件适合做什么？	   A
+
+A.没有数据操作的组件	
+B.数据操作较多的组件	
+C.没有生命周期的组件	
+D.没有内容的组件		
+			
+
+7.在react中对元素描述正确的是？	A
+元素是react应用中最小的构建单元	
+元素是必须通过react.component生成	
+元素是虚拟的	
+
+				
+8.jsx是什么？	B
+A.一个第三方包	
+B.HTML和JavaScript混写的语法，当遇到<，JSX就当HTML解析，遇到{就当JavaScript解析	
+C.一种框架	js的一个方法				
+	
+9.如何在jsx语法中书写表达式？	A
+A.{}	
+B.{{}}	
+C.()	
+D.‘’					
+	
+10.react无状态组件是指什么？  A	
+A.创建纯展示组件，这种组件只负责根据传入的props来展示，不涉及state操作	
+B.不可以接受props	
+C.不可以使用jsx语法	
+D.不可以使用条件判断					
+	
+11.react定义组件有几种方式	A
+A.3	
+B.2	
+C.1	
+D.4					
+	
+12.react的数据流方式是什么？	A
+A.单向数据流	
+B.双向数据流	
+C.没有规定数据流方式	
+					
+13.componentWillUnmount这个生命周期在react中的作用是什么？	B
+A.接收到新的props或者state后	
+B.组件被移除之前被调用，可以用于做一些清理工作	
+C.完成渲染新的props或者state后调用	
+D.组件是否应当渲染新的props或state					
+	
+14.什么情况下会触发componentWillReceiveProps这个生命周期   	A
+A.组件接收到新的props时	
+B.组件接收到新的state时	
+C.组件重新渲染时	
+D.当前组件修改props的时候					
+
+15.以下对于findDOMNode说法正确的	  A
+A.当参数是DOM，返回值就是该DOM	
+B.当参数是Component获取的是该Component?	
+C.当参数是Component获取的是该父级组件?	
+D.null					
+	
+16.以下对于ref说法正确的	 	B
+A.添加到Compoennt实例上获取到的是dom	
+B.添加到dom上获取到的是dom	
+C.添加到dom上获取到的是component实例	
+D.替换值					
+	
+17.属于react事件系统的有哪些？	C
+A.事件删除	
+B.事件等待	
+C.事件注册	
+D.冒泡					
+	
+18.componentDidMount说法不正确的有？	D
+A.真实的DOM被渲染出来后调用	
+B.可以访问真实的dom	
+C.在服务端中，该方法不会被调用	
+D.真实dom渲染之前调用					
+	
+19.以下哪些生命周期只调用一次？	A
+A.getDefaultProps	
+B."componentWillReceiveProps
+"	
+C.render	
+D."shouldComponentUpdate
+"					
+	
+20.以下属于实例期的有哪些？	 C
+A.componentWillReceiveProps	
+B.shouldComponentUpdate	
+C.componentWillMount	
+D.componentWillUnmount				
+
+21.以下描述错误的是？	       C
+A.componentWillReceiveProps属于存在期	
+B.shouldComponentUpdate属于存在期	
+C.componentWillUnmount属于存在期		
+			
+22.如何在react.component定义组件时定义初始化的state	C
+A.getDefaultProps	
+B.getInitialState	
+C.constructor中设置this.state						
+	
+23.如何在react.component形式中定义state	  D
+A.默认生成	
+B.getInitialState	
+C.getDefaultState	
+D.constructor中直接设置this.state	
+			
+24.如何在react.component中定义默认的props	  B
+A.默认生成	
+B.componentName.defaultProps = {}	
+C.getDefaultProps					
+	
+25.react.component定义的组件中某个方法里默认打印this结果是什么	A
+A.undefined	
+B.not definde	
+C.react.component类					
+
+多选：	
+26.组件通讯一般包含哪几种	ABC
+A.父向子	
+B.子向父	
+C.没有嵌套的组件						
+	
+27.以下对于react获取dom说法正确的有？         ABCD	
+A.ref添加到Compoennt上获取的是Compoennt实例
+B.添加到原生HTML上获取的是DOM
+"	
+C.ReactDOM.findDOMNode，当参数是DOM，返回值就是该DOM	
+D.当参数是Component获取的是该Component render方法中的DOM					
+	
+28.对于ref和findDOMNOde区别描述正确的有？	AB
+A.refs可以拿子子组件的props/state/方法；	
+B.findDOMNOde拿到的是原生的标签相关属性；	
+C.一个获取dom一个获取组件						
+   
+29.以下哪些事件类型在react中可以使用	 AB
+A.合成事件	
+B.原生事件	
+C.onChangStateSuccess	
+D.onChangStateError
+					
+30.常用事件有哪些？	ABCD 
+A.键盘事件
+B.焦点事件	
+C.鼠标事件	
+D.表单事件				
+	
+31.以下属于event属性和方法的有哪些？     ABCD
+A.target	
+B.type	
+C.preventDefault()	
+D.stopPropagation()				
+	
+32.react组件分为哪几个大的周期？	    ABC
+A.实力化	
+B.存在期	
+C.销毁期	
+D.更改期				
+	
+33.对于shouldComponentUpdate描述正确的是？	ABC
+A.组件是否应当渲染新的props或state	
+B.返回false表示跳过后续的生命周期方法	
+C."在首次渲染期间或者调用了forceUpdate方法后，该方法不会被调用
+"	
+D.可以不用指定返回值				
+	
+34.react.createClass的特性？	 AB
+A.React.createClass会自绑定函数方法	
+B.属于es5书写形式	
+C.和无状态组件差异不大						
+	
+35.react.component的特性？       AB	
+A.是以ES6的形式来创建react的组件的	
+B.创建的组件，其成员函数不会自动绑定this	
+C.和无状态组件差异不大						
+	
+
+36.子向父传值可以使用自定义事件    X
+									
+37.没有嵌套关系的组件通讯可以同时调用一个父级给的回调函数		Y							
+38.componentWillMount完成首次渲染之前调用，此时仍可以修改组件的state	Y								
+39.componentDidMount可以获取真实的dom元素      Y								
+40.不可以使用this.props直接修改props，因为props是只读的	   Y								

@@ -1,0 +1,34 @@
+{
+    "person":[
+        {
+            "img":"./images/1.png",
+            "names":"张晓明",
+            "recom":"财经网特约股市专家"
+        },
+        {
+            "img":"./images/2.png",
+            "names":"张宏毅",
+            "recom":"首席经济分析专家"
+        },{
+            "img":"./images/3.png",
+            "names":"陈启明",
+            "recom":"金融投资家"
+        },{
+            "img":"./images/4.png",
+            "names":"谢孟都",
+            "recom":"职业操盘手"
+        },{
+            "img":"./images/5.png",
+            "names":"周易",
+            "recom":"凤凰网股市专家"
+        },{
+            "img":"./images/6.png",
+            "names":"林勇",
+            "recom":"资深乐派投资人"
+        },{
+            "img":"./images/7.png",
+            "names":"张莉燕",
+            "recom":"知名财经评论家"
+        }
+    ]
+}

@@ -1,0 +1,170 @@
+已考试卷查看 关闭
+试卷信息
+试卷名称：	P0044-  
+渐进式开发5
+ 	及格分数：	
+90
+试卷层级：	学院 : 网站工程	方向 : 	阶段 : 	课程 : 	单元 : 
+已考试卷分析
+全部[20]单选题[10]多选题[5]判断题[5]
+试卷总分：100
+1.[单选题](5分)
+以下对于findDOMNode说法正确的
+A: 当参数是DOM，返回值就是该DOM
+B: 当参数是Component获取的是该Component？
+C: 当参数是Component获取的是该父级组件？
+D: null
+正确答案： A 
+试题解析：
+我的答案： A 
+2.[单选题](5分)
+属于react事件系统的有哪些？
+A: 事件删除
+B: 事件等待
+C: 事件注册
+D: 冒泡
+正确答案： C 
+试题解析：
+我的答案： C 
+3.[单选题](5分)
+阻止事件默认行为的方法是什么
+A: event.preventDefault
+B: event.target
+C: event.type
+D: event.stop
+正确答案： A 
+试题解析：
+我的答案： A 
+4.[单选题](5分)
+以下什么方法可以不再派发事件
+A: event.preventDefault
+B: event.stopPropagation
+C: event.stop
+D: event.type
+正确答案： B 
+试题解析：
+我的答案： B 
+5.[单选题](5分)
+<b onClik={clickFn}>点我</b> 中clickFn函数中的this的值是， 知识点：事件处理 来源：大纲
+A: window
+B: b 标签
+C: 组件实例
+D: undefined
+正确答案： D 
+试题解析：
+我的答案： C 
+6.[单选题](5分)
+react中绑定事件处理函数中的this可以使用,  知识点：事件处理 来源：大纲
+A: call
+B: apply
+C: bind
+D: 以上都不对
+正确答案： C 
+试题解析：
+我的答案： C 
+7.[单选题](5分)
+react中合成事件中可以通过那种方式阻止事件默认行为， 知识点：事件处理 来源：大纲
+A: return false
+B: e.preventDefault()
+C: e.stopPropagation()
+D: e.prevent()
+正确答案： B 
+试题解析：
+我的答案： B 
+8.[单选题](5分)
+react合成事件如何销毁,  知识点：事件处理 来源：大纲
+A: removeEventListener()
+B: detachEvent()
+C: remove()
+D: 自动销毁
+正确答案： D 
+试题解析：
+我的答案： D 
+9.[单选题](5分)
+组件里面绑定的合成事件想要通过 e.stopPropagation() 来阻止事件冒泡到 document如何解决,  知识点：事件处理 来源：大纲
+A: e.stopPropagation()
+B: e.nativeEvent.stopImmediatePropagation()
+C: return false
+D: e.stopPropagation()
+正确答案： B 
+试题解析：
+我的答案： A 
+10.[单选题](5分)
+reac合成事件相比dom原生事件的优点是：知识点：事件处理 来源：大纲
+A: 兼容性好
+B: 写法简单
+C: 没区别
+D: api丰富
+正确答案： A 
+试题解析：
+我的答案： A 
+11. [多选题] (5分)
+以下哪些事件类型在react中可以使用
+A: 合成事件
+B: 原生事件
+C: onChangStateSuccess
+D: onChangStateError
+正确答案：AB
+试题解析：
+我的答案： AB 
+12. [多选题] (5分)
+常用事件有哪些？
+A: 键盘事件
+B: 焦点事件
+C: 鼠标事件
+D: 表单事件
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+13. [多选题] (5分)
+以下属于event属性和方法的有哪些？
+A: target
+B: type
+C: preventDefault()
+D: stopPropagation()
+正确答案：ABCD
+试题解析：
+我的答案： ABCD 
+14. [多选题] (5分)
+react可以使用下面那些方法绑定this,  知识点：事件处理 来源：大纲
+A: bind方法
+B: 箭头函数
+C: call方法
+D: 继承
+正确答案：AB
+试题解析：
+我的答案： ABD 
+15. [多选题] (5分)
+下面那些事件属于键盘事件,  知识点：事件处理 来源：大纲
+A: onKeyDown
+B: onKeyUp
+C: onKeyup
+D: onKeydown
+正确答案：AB
+试题解析：
+我的答案： AB 
+16. [判断题] (5分)
+react在DOM事件体系基础上做了很大改进，减少了内存消耗，简化了事件逻辑，并最大化的解决了IE等浏览器的不兼容问题。
+正确答案： 错 
+试题解析：
+我的答案： 错 
+17. [判断题] (5分)
+原生事件在react中基本都可以支持使用
+正确答案： 对 
+试题解析：
+我的答案： 错 
+18. [判断题] (5分)
+react的合成事件和dom原生事件没有区别,  知识点：事件处理 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 错 
+19. [判断题] (5分)
+react合成事件，事件名称必须驼峰命名  知识点：事件处理 来源：大纲
+正确答案： 对 
+试题解析：
+我的答案： 对 
+20. [判断题] (5分)
+react合成事件可以使用return false阻止事件默认行为 知识点：事件处理 来源：大纲
+正确答案： 错 
+试题解析：
+我的答案： 对 

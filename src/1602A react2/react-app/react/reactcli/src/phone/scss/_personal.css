@@ -1,0 +1,30 @@
+.personal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.personal h3 {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.personal .list {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.personal .list a {
+  flex: 1;
+  text-align: center;
+  color: #666;
+}
+
+.personal .list .active {
+  color: #3f3fbd;
+}

@@ -1,0 +1,105 @@
+D1
+单选
+
+1. react属于什么模式的框架 D
+   A mvc
+   B mvvm
+   C mvp
+   D 只做视图层
+
+2. jsx是什么？ B
+   A 一个第三方包
+   B HTML和JavaScript混写的语法，当遇到<，JSX就当HTML解析，遇到{就当JavaScript解析
+   C 一种框架
+   D js的一个方法
+
+3. 如何在jsx语法中书写表达式？ A
+   A {}
+   B {{}}
+   C ()
+   D ‘’
+
+4. react进行渲染元素时要使用什么包或者类库 A
+   A react-dom
+   B render
+   C components
+   D component
+
+5. 在react中对元素描述正确的是？ C
+   A 元素是react应用中最小的构建单元
+   B 元素是必须通过react.component生成
+   C 元素是虚拟的
+
+6. react-dom包描述正确的是？A
+   A 提供了 DOM 特定的方法
+   B 所有组件都可以使用其获取dom
+   C 可以使用其创建组件
+   D 操作dom的包
+
+7. react-dom中的render方法作用描述错误的是? C
+   A 第一个参数是要渲染的react元素
+   B 第二个参数是要渲染到的容器
+   C 不会修改容器节点
+   D 会修改容器节点
+
+8. react的作者是谁？ B
+   A google
+   B facebook
+   C 百度
+   D 阿里
+
+多选
+1. react的特点是什么？BC
+
+   A 数据双向绑定
+
+   B Virtual DOM
+
+   C 组件化系统
+
+   D 双向数据流
+
+2. 对jsx描述正确的是 BD
+
+   A JSX必须严格闭合
+
+   B jsx使用javascript
+
+   C 语法跟html非常相似
+
+   D 不可以使用条件判断
+
+3. jsx的特点？ABC
+
+   A 允许自定义标签及组件
+
+   B 标签处理方式，更加可读
+
+   C 语法跟HTML非常相似
+
+4. 对虚拟dom描述正确的是？ABCD
+
+   A 它直接用JavaScript实现了DOM树
+
+   B 组件的HTML结构并不会直接生成DOM，而是映射生成虚拟的JavaScript DOM结构
+
+   C React又通过在这个虚拟DOM上实现了一个 diff 算法找出最小变更，再把这些变更写入实际的DOM中
+
+   D 这个虚拟DOM以JS结构的形式存在，计算性能会比较好，而且由于减少了实际DOM操作次数，性能会有较大提升
+
+判断
+1. react中渲染元素使用react-dom包 V
+
+2. react专注于视图层的处理 V
+
+3. jsx语法中表达式使用{} V
+
+4. jsx语法中不可以书写条件 X
+
+5. 在React中，是把真实的DOM转换成JavaScript对象树，也就是所谓的虚拟DOM。V
+
+6. react特性和其他主流mvvm框架一直 X
+
+7. react中提出jsx语法是为了提高开发效率，代码更加语义化 V
+
+8. jsx语法是javascript和xml的混合 V

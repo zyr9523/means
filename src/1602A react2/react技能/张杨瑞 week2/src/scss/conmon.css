@@ -1,0 +1,99 @@
+﻿@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: .14rem;
+    font-style: normal;
+    font-family: "微软雅黑";
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 100px;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input {
+    -webkit-appearance: none;
+    border: 0
+}
+
+
+/* <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="format-detection" content="telephone=no,email=no,address=no"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,max-scale=1.0,min-scale=1.0,user-scalable=no"/> */
+
+
+/* html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.warp,
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    flex-direction: column;
+} */
+
+
+/* h3 {
+    font-size: .12rem;
+    color: #3f3f3f;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: cllipsis;
+    margin-top: .03rem;
+} */
+
+
+/*  h3{
+   width:100%;
+   overflow:hidden;
+   text-overflow:cllipsis;
+   white-space:nowrap;
+} */

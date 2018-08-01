@@ -1,0 +1,79 @@
+.fell {
+  flex: 1;
+  background: #f6514b;
+  overflow: hidden;
+  position: relative;
+  background: url("../../assets/fell.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.fell .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fell a {
+  width: 110px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  top: 490px;
+}
+
+.fell .list {
+  width: 80%;
+  height: 75%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.fell .list ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.fell .list ul li {
+  width: 100%;
+}
+
+.fell .list ul li h3 {
+  font-size: 16px;
+}
+
+.fell .list ul li i {
+  margin-left: 20px;
+  color: #333;
+}
+
+.fell .list ul li div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.fell .list ul li div i {
+  width: 50px;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px 0;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #666;
+}
+
+.fell .list ul li div i.on {
+  background: #f6514b;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
